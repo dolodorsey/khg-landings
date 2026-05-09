@@ -1,0 +1,6762 @@
+{
+  "dr_dorsey": {
+    "brand_key": "dr_dorsey",
+    "brand_name": "Dr. Bryan \"Dolo\" Dorsey",
+    "short_name": "Dr. Dorsey",
+    "division": "founder",
+    "ig_handle": "dolodorsey",
+    "website": "https://doctordorsey.com",
+    "primary_color": "#10B981",
+    "accent_color": "#F59E0B",
+    "dark_color": "#08090E",
+    "category": "Entrepreneur",
+    "contact_email": "dolo@thekollective.app",
+    "voice": "Doctor's directness + Atlanta operator's wit. Writes like he's emailing one person, not broadcasting.",
+    "tagline": "Lifestyle specialist. Brand architect. Atlanta operator.",
+    "bio_text": "🧠 Dr. Bryan \"Dolo\" Dorsey\nFounder · The Kollective Hospitality Group\nLifestyle is the system. ATL → everywhere.\n🔗 Tap for the playbook.",
+    "link_in_bio_label": "The Playbook →",
+    "audience": "founders, operators, mental-health advocates, lifestyle entrepreneurs, ATL creatives",
+    "highlights": [
+      {
+        "i": 1,
+        "t": "START HERE",
+        "concept": "What Dolo's about — 4 frames"
+      },
+      {
+        "i": 2,
+        "t": "KHG",
+        "concept": "The 72-brand enterprise"
+      },
+      {
+        "i": 3,
+        "t": "PHILOSOPHY",
+        "concept": "Lifestyle = infrastructure for mental health"
+      },
+      {
+        "i": 4,
+        "t": "BUILDING",
+        "concept": "What's launching now"
+      },
+      {
+        "i": 5,
+        "t": "PODCAST",
+        "concept": "Long-form conversations"
+      },
+      {
+        "i": 6,
+        "t": "ATL",
+        "concept": "Why Atlanta wins"
+      },
+      {
+        "i": 7,
+        "t": "ZEN",
+        "concept": "Father stuff"
+      },
+      {
+        "i": 8,
+        "t": "PRESS",
+        "concept": "Speaking + media"
+      },
+      {
+        "i": 9,
+        "t": "PARTNER",
+        "concept": "Work with us"
+      },
+      {
+        "i": 10,
+        "t": "FAQ",
+        "concept": "Common questions"
+      }
+    ],
+    "pillar_mix": [
+      [
+        "Lifestyle Philosophy",
+        25
+      ],
+      [
+        "Build-In-Public",
+        25
+      ],
+      [
+        "Atlanta",
+        20
+      ],
+      [
+        "Mental Health Advocacy",
+        15
+      ],
+      [
+        "Family / Personal",
+        15
+      ]
+    ],
+    "intents": [
+      {
+        "name": "BOOK ASK — speaking",
+        "keywords": [
+          "book you",
+          "speaking",
+          "keynote",
+          "speak at",
+          "book dr",
+          "book dolo",
+          "panel"
+        ],
+        "pool": "dolo_personal",
+        "link_path": "speaking",
+        "stage": 5,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "ADVISORY / CONSULT",
+        "keywords": [
+          "advise",
+          "consulting",
+          "consult",
+          "pick your brain",
+          "mentorship",
+          "coach"
+        ],
+        "pool": "dolo_personal",
+        "link_path": "advisory",
+        "stage": 5,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "INVEST / FUNDING",
+        "keywords": [
+          "invest",
+          "investor",
+          "funding",
+          "raise",
+          "cap table",
+          "pitch",
+          "backer"
+        ],
+        "pool": "dolo_personal",
+        "link_path": "invest",
+        "stage": 5,
+        "action": "reply_and_handoff"
+      },
+      {
+        "name": "PRESS / MEDIA",
+        "keywords": [
+          "journalist",
+          "reporter",
+          "podcast",
+          "interview",
+          "feature",
+          "press"
+        ],
+        "pool": "dolo_personal",
+        "link_path": "press",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "JOB / WORK WITH US",
+        "keywords": [
+          "hire me",
+          "job",
+          "apply",
+          "work with you",
+          "work for",
+          "resume",
+          "intern"
+        ],
+        "pool": "ops",
+        "link_path": "careers",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "BOOK CLUB / READS",
+        "keywords": [
+          "book club",
+          "what are you reading",
+          "recommend",
+          "reading list",
+          "book rec"
+        ],
+        "pool": null,
+        "link_path": "reads",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "MENTAL HEALTH",
+        "keywords": [
+          "mental health",
+          "therapy",
+          "therapist",
+          "anxious",
+          "depressed",
+          "reset",
+          "self care",
+          "burnout"
+        ],
+        "pool": null,
+        "link_path": "wellness",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "BRAND PARTNERSHIP",
+        "keywords": [
+          "brand deal",
+          "partnership",
+          "collab",
+          "ad",
+          "sponsor",
+          "ambassador"
+        ],
+        "pool": "ops",
+        "link_path": "partners",
+        "stage": 3,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "KHG QUESTION",
+        "keywords": [
+          "kollective",
+          "khg",
+          "your company",
+          "who do you own"
+        ],
+        "pool": null,
+        "link_path": "khg",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "FAN / ENCOURAGEMENT",
+        "keywords": [
+          "love your",
+          "big fan",
+          "you inspire",
+          "appreciate",
+          "thank you for"
+        ],
+        "pool": null,
+        "link_path": null,
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "LIFESTYLE / ATL EVENT",
+        "keywords": [
+          "coming to atlanta",
+          "in atl",
+          "visiting atlanta",
+          "atl recommendation",
+          "where to go in atlanta"
+        ],
+        "pool": null,
+        "link_path": "atl-guide",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "GENERIC FIRST DM",
+        "keywords": [],
+        "trigger": "first_dm",
+        "pool": null,
+        "link_path": null,
+        "stage": null,
+        "action": "reply_only"
+      }
+    ],
+    "pinned": [
+      {
+        "slot": 1,
+        "concept": "Who I am + what I'm building (KHG snapshot)"
+      },
+      {
+        "slot": 2,
+        "concept": "Lifestyle is mental-health infrastructure (3-frame thesis)"
+      },
+      {
+        "slot": 3,
+        "concept": "Why I'm bullish on Atlanta forever"
+      }
+    ]
+  },
+  "kollective": {
+    "brand_key": "kollective",
+    "brand_name": "The Kollective Hospitality Group",
+    "short_name": "Kollective",
+    "division": "corporate",
+    "ig_handle": "kollectivehospitality",
+    "website": "https://thekollective.app",
+    "primary_color": "#0F172A",
+    "accent_color": "#F59E0B",
+    "dark_color": "#08090E",
+    "category": "Holding Company",
+    "contact_email": "hello@thekollective.app",
+    "voice": "Systems-builder calm. Confident, no-fluff, every sentence earns its space.",
+    "tagline": "72 brands. 8 cities. One operating system.",
+    "bio_text": "🏛 The Kollective Hospitality Group\n72-brand enterprise · 8 cities · 1 operating system.\nBuilding lifestyle infrastructure for the modern city.\n🔗 The portfolio.",
+    "link_in_bio_label": "Explore the Portfolio →",
+    "audience": "investors, partners, press, prospective hires, operators",
+    "highlights": [
+      {
+        "i": 1,
+        "t": "ABOUT KHG",
+        "concept": "Who we are + the 8-division model"
+      },
+      {
+        "i": 2,
+        "t": "EVENTS",
+        "concept": "HugLife + ICONIC + 15 event brands"
+      },
+      {
+        "i": 3,
+        "t": "F&B",
+        "concept": "Casper Group + 10 ghost kitchens"
+      },
+      {
+        "i": 4,
+        "t": "MUSEUMS",
+        "concept": "Forever Futbol + Scented Flowers"
+      },
+      {
+        "i": 5,
+        "t": "PRODUCTS",
+        "concept": "Infinity, Pronto, Stush, MAGA"
+      },
+      {
+        "i": 6,
+        "t": "APPS",
+        "concept": "Good Times, SOS, On Call, Luxe, Help 911"
+      },
+      {
+        "i": 7,
+        "t": "SERVICES",
+        "concept": "Umbrella, Mind Studio, Brand Studio"
+      },
+      {
+        "i": 8,
+        "t": "NONPROFIT",
+        "concept": "Playmakers + Sole Exchange"
+      },
+      {
+        "i": 9,
+        "t": "PRESS",
+        "concept": "Press + speaking + features"
+      },
+      {
+        "i": 10,
+        "t": "PARTNER",
+        "concept": "Work with us"
+      }
+    ],
+    "pillar_mix": [
+      [
+        "Brand Spotlights",
+        30
+      ],
+      [
+        "Build-In-Public",
+        25
+      ],
+      [
+        "Atlanta",
+        15
+      ],
+      [
+        "Wins / Milestones",
+        15
+      ],
+      [
+        "Founder Voice",
+        15
+      ]
+    ],
+    "intents": [
+      {
+        "name": "INVEST INQUIRY",
+        "keywords": [
+          "invest",
+          "investor",
+          "ventur",
+          "fund",
+          "capital",
+          "raise",
+          "pitch deck",
+          "accredited"
+        ],
+        "pool": "dolo_personal",
+        "link_path": "invest",
+        "stage": 5,
+        "action": "reply_and_handoff"
+      },
+      {
+        "name": "PARTNERSHIP / B2B",
+        "keywords": [
+          "partner",
+          "partnership",
+          "collab",
+          "b2b",
+          "enterprise",
+          "wholesale",
+          "license"
+        ],
+        "pool": "ops",
+        "link_path": "partners",
+        "stage": 3,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "PRESS / MEDIA",
+        "keywords": [
+          "press",
+          "journalist",
+          "reporter",
+          "interview",
+          "feature",
+          "podcast",
+          "story"
+        ],
+        "pool": "dolo_personal",
+        "link_path": "press",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "CAREERS",
+        "keywords": [
+          "job",
+          "hiring",
+          "apply",
+          "work with",
+          "intern",
+          "careers",
+          "resume"
+        ],
+        "pool": "ops",
+        "link_path": "careers",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "FRANCHISE / LICENSE",
+        "keywords": [
+          "franchise",
+          "license",
+          "open in",
+          "launch in",
+          "bring to my city"
+        ],
+        "pool": "ops",
+        "link_path": "license",
+        "stage": 3,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "EVENT BOOKING",
+        "keywords": [
+          "book",
+          "venue",
+          "party",
+          "corporate event",
+          "host",
+          "hire space"
+        ],
+        "pool": "ops",
+        "link_path": "events",
+        "stage": 1,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "BRAND-SPECIFIC",
+        "keywords": [
+          "huglife",
+          "good times",
+          "forever futbol",
+          "help 911",
+          "casper",
+          "maga",
+          "stush",
+          "mind studio"
+        ],
+        "pool": null,
+        "link_path": "brands",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "VENDOR / SUPPLIER",
+        "keywords": [
+          "vendor",
+          "supply",
+          "sell to you",
+          "my service",
+          "my product",
+          "b2b sales"
+        ],
+        "pool": "ops",
+        "link_path": "vendors",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "ADVISORY",
+        "keywords": [
+          "advise",
+          "consulting",
+          "help my business",
+          "build my brand"
+        ],
+        "pool": "ops",
+        "link_path": "advisory",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "GENERAL INFO",
+        "keywords": [
+          "who are you",
+          "what is khg",
+          "what do you do",
+          "tell me about"
+        ],
+        "pool": null,
+        "link_path": null,
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "FAN / ENCOURAGEMENT",
+        "keywords": [
+          "amazing",
+          "incredible",
+          "love what",
+          "big fan",
+          "appreciate"
+        ],
+        "pool": null,
+        "link_path": null,
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "GENERIC FIRST DM",
+        "keywords": [],
+        "trigger": "first_dm",
+        "pool": null,
+        "link_path": null,
+        "stage": null,
+        "action": "reply_only"
+      }
+    ],
+    "pinned": [
+      {
+        "slot": 1,
+        "concept": "What KHG is — 8 divisions, 72 brands, 1 system"
+      },
+      {
+        "slot": 2,
+        "concept": "Founder's letter (Dolo) — why we're building"
+      },
+      {
+        "slot": 3,
+        "concept": "Open jobs / partnerships / press"
+      }
+    ]
+  },
+  "huglife": {
+    "brand_key": "huglife",
+    "brand_name": "HugLife",
+    "short_name": "HugLife",
+    "division": "events",
+    "ig_handle": "just.huglife",
+    "website": "https://huglife.com",
+    "primary_color": "#EC4899",
+    "accent_color": "#FBBF24",
+    "dark_color": "#08090E",
+    "category": "Event Series",
+    "contact_email": "hi@huglife.com",
+    "voice": "Concierge polish meets after-party energy. Always pulling the next person forward.",
+    "tagline": "Atlanta's most loved nightlife platform.",
+    "bio_text": "💕 HugLife — Atlanta nightlife, done with love.\n15+ event brands. Iconic moments. ATL → everywhere.\n🔗 Next event ↓",
+    "link_in_bio_label": "Get on the List →",
+    "audience": "Atlanta nightlife, 21-40, music + culture lovers, locals + visitors",
+    "highlights": [
+      {
+        "i": 1,
+        "t": "NEXT UP",
+        "concept": "Upcoming events"
+      },
+      {
+        "i": 2,
+        "t": "RECAPS",
+        "concept": "Last weekend's energy"
+      },
+      {
+        "i": 3,
+        "t": "VIP / TABLES",
+        "concept": "Reserve a table or VIP"
+      },
+      {
+        "i": 4,
+        "t": "BRANDS",
+        "concept": "All 15+ HugLife event brands"
+      },
+      {
+        "i": 5,
+        "t": "MUSIC",
+        "concept": "DJ lineups + playlists"
+      },
+      {
+        "i": 6,
+        "t": "GALLERY",
+        "concept": "Best photos / fits"
+      },
+      {
+        "i": 7,
+        "t": "OUT OF TOWN",
+        "concept": "Tour cities"
+      },
+      {
+        "i": 8,
+        "t": "PRESS",
+        "concept": "Media + features"
+      },
+      {
+        "i": 9,
+        "t": "APPLY",
+        "concept": "DJ / talent / staff"
+      },
+      {
+        "i": 10,
+        "t": "FAQ",
+        "concept": "Common questions"
+      }
+    ],
+    "pillar_mix": [
+      [
+        "Event Promo (Now/Next)",
+        35
+      ],
+      [
+        "Recaps + UGC",
+        25
+      ],
+      [
+        "Atlanta Culture",
+        20
+      ],
+      [
+        "Brand Spotlights",
+        10
+      ],
+      [
+        "Founder/BTS",
+        10
+      ]
+    ],
+    "intents": [
+      {
+        "name": "TABLE / VIP RESERVATION",
+        "keywords": [
+          "table",
+          "vip",
+          "bottle service",
+          "reserve",
+          "reservation",
+          "section",
+          "booth"
+        ],
+        "pool": "ops",
+        "link_path": "vip",
+        "stage": 1,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "TICKETS / GUEST LIST",
+        "keywords": [
+          "ticket",
+          "guest list",
+          "gl",
+          "get in",
+          "cover",
+          "entry",
+          "line",
+          "door"
+        ],
+        "pool": null,
+        "link_path": "tickets",
+        "stage": 1,
+        "action": "reply_only"
+      },
+      {
+        "name": "EVENT TIME / ADDRESS",
+        "keywords": [
+          "what time",
+          "when does",
+          "address",
+          "location",
+          "where is",
+          "what venue",
+          "start time"
+        ],
+        "pool": null,
+        "link_path": null,
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "DRESS CODE / ID",
+        "keywords": [
+          "dress code",
+          "wear",
+          "what to wear",
+          "id",
+          "age",
+          "21",
+          "under 21",
+          "minimum age"
+        ],
+        "pool": null,
+        "link_path": "faq",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "PARKING / RIDE",
+        "keywords": [
+          "parking",
+          "park",
+          "valet",
+          "uber",
+          "ride",
+          "public transit"
+        ],
+        "pool": null,
+        "link_path": null,
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "DJ / TALENT BOOKING",
+        "keywords": [
+          "i'm a dj",
+          "i am a dj",
+          "book me",
+          "my mix",
+          "my set",
+          "perform",
+          "talent booking"
+        ],
+        "pool": "ops",
+        "link_path": "talent",
+        "stage": 2,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "BIRTHDAY",
+        "keywords": [
+          "birthday",
+          "celebrating",
+          "my bday",
+          "b-day",
+          "turning"
+        ],
+        "pool": "ops",
+        "link_path": "vip",
+        "stage": 1,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "PRESS / MEDIA",
+        "keywords": [
+          "press",
+          "photographer",
+          "videographer",
+          "media pass",
+          "credentials"
+        ],
+        "pool": "ops",
+        "link_path": "press",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "BRAND PARTNERSHIP",
+        "keywords": [
+          "sponsor",
+          "brand deal",
+          "partnership",
+          "activation",
+          "collab"
+        ],
+        "pool": "ops",
+        "link_path": "partners",
+        "stage": 3,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "JOB / STAFF",
+        "keywords": [
+          "hostess",
+          "hiring",
+          "work for",
+          "staff",
+          "bartender",
+          "promoter"
+        ],
+        "pool": "ops",
+        "link_path": "careers",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "RECAP / PHOTO",
+        "keywords": [
+          "my picture",
+          "photo of me",
+          "tag me",
+          "find my",
+          "gallery",
+          "photos"
+        ],
+        "pool": null,
+        "link_path": "gallery",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "GENERIC FIRST DM",
+        "keywords": [],
+        "trigger": "first_dm",
+        "pool": null,
+        "link_path": null,
+        "stage": null,
+        "action": "reply_only"
+      }
+    ],
+    "pinned": [
+      {
+        "slot": 1,
+        "concept": "What's HugLife — the 15-brand universe"
+      },
+      {
+        "slot": 2,
+        "concept": "How to get on a guest list / book a table"
+      },
+      {
+        "slot": 3,
+        "concept": "Last weekend's recap reel"
+      }
+    ]
+  },
+  "maga": {
+    "brand_key": "maga",
+    "brand_name": "MAGA — Make Atlanta Great Again",
+    "short_name": "MAGA",
+    "division": "products",
+    "ig_handle": "makeatlantagreatagain",
+    "website": "https://makeatlantagreatagain.com",
+    "primary_color": "#DC2626",
+    "accent_color": "#1E3A8A",
+    "dark_color": "#08090E",
+    "category": "Civic Brand",
+    "contact_email": "hi@makeatlantagreatagain.com",
+    "voice": "Warm + welcoming + ATL-coded. Speaks to neighbors, not strangers.",
+    "tagline": "Civic apparel + ATL pride. Wear the city.",
+    "bio_text": "🍑 MAKE ATLANTA GREAT AGAIN\nCivic-pride apparel + the loudest love letter to the A.\nWorn by mayors, MCs, and middle schoolers.\n🔗 Shop the city.",
+    "link_in_bio_label": "Shop MAGA →",
+    "audience": "Atlanta locals, transplants, visitors, civic-pride fans, gift-buyers",
+    "highlights": [
+      {
+        "i": 1,
+        "t": "SHOP NOW",
+        "concept": "Best sellers"
+      },
+      {
+        "i": 2,
+        "t": "NEW DROP",
+        "concept": "Latest release"
+      },
+      {
+        "i": 3,
+        "t": "WORN BY",
+        "concept": "Notable people in MAGA"
+      },
+      {
+        "i": 4,
+        "t": "ATL HISTORY",
+        "concept": "Why Atlanta is great"
+      },
+      {
+        "i": 5,
+        "t": "GIFT",
+        "concept": "Gift guide"
+      },
+      {
+        "i": 6,
+        "t": "WHOLESALE",
+        "concept": "Bulk + retailers"
+      },
+      {
+        "i": 7,
+        "t": "AMBASSADOR",
+        "concept": "Be a MAGA rep"
+      },
+      {
+        "i": 8,
+        "t": "EVENTS",
+        "concept": "Pop-ups + drops"
+      },
+      {
+        "i": 9,
+        "t": "PRESS",
+        "concept": "Press + features"
+      },
+      {
+        "i": 10,
+        "t": "FAQ",
+        "concept": "Sizing + shipping"
+      }
+    ],
+    "pillar_mix": [
+      [
+        "Product Drops",
+        35
+      ],
+      [
+        "Worn-By Spotlights",
+        25
+      ],
+      [
+        "Atlanta Culture/History",
+        20
+      ],
+      [
+        "Customer UGC",
+        10
+      ],
+      [
+        "Founder/BTS",
+        10
+      ]
+    ],
+    "intents": [
+      {
+        "name": "ORDER STATUS",
+        "keywords": [
+          "where is my order",
+          "tracking",
+          "shipped",
+          "status",
+          "my order",
+          "didn't arrive",
+          "never received"
+        ],
+        "pool": "ops",
+        "link_path": "track",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "SIZING",
+        "keywords": [
+          "size",
+          "sizing",
+          "fit",
+          "run small",
+          "run big",
+          "what size",
+          "large or"
+        ],
+        "pool": null,
+        "link_path": "sizing",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "RETURN / EXCHANGE",
+        "keywords": [
+          "return",
+          "exchange",
+          "wrong size",
+          "refund",
+          "damaged",
+          "defect"
+        ],
+        "pool": "ops",
+        "link_path": "returns",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "RESTOCK",
+        "keywords": [
+          "restock",
+          "sold out",
+          "out of stock",
+          "when back",
+          "more coming"
+        ],
+        "pool": null,
+        "link_path": "restock",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "WHOLESALE / RETAIL",
+        "keywords": [
+          "wholesale",
+          "bulk",
+          "stock in my store",
+          "retailer",
+          "carry your"
+        ],
+        "pool": "ops",
+        "link_path": "wholesale",
+        "stage": 3,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "AMBASSADOR / REP",
+        "keywords": [
+          "ambassador",
+          "rep",
+          "represent",
+          "affiliate",
+          "creator",
+          "promote"
+        ],
+        "pool": "ops",
+        "link_path": "ambassador",
+        "stage": 2,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "CUSTOM / GROUP ORDER",
+        "keywords": [
+          "custom",
+          "corporate",
+          "group order",
+          "bulk",
+          "team order",
+          "logo on"
+        ],
+        "pool": "ops",
+        "link_path": "custom",
+        "stage": 3,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "DESIGN PITCH",
+        "keywords": [
+          "design idea",
+          "collab",
+          "my design",
+          "i designed",
+          "artist"
+        ],
+        "pool": "ops",
+        "link_path": "submissions",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "SHIP INTERNATIONAL",
+        "keywords": [
+          "ship to",
+          "international",
+          "outside us",
+          "canada",
+          "uk",
+          "europe"
+        ],
+        "pool": null,
+        "link_path": "shipping",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "PRESS / FEATURE",
+        "keywords": [
+          "press",
+          "feature",
+          "journalist",
+          "podcast",
+          "blog about"
+        ],
+        "pool": "ops",
+        "link_path": "press",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "ATL VISITOR",
+        "keywords": [
+          "visiting atlanta",
+          "coming to atl",
+          "in town",
+          "tourist",
+          "what to do in atl"
+        ],
+        "pool": null,
+        "link_path": "atl",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "GENERIC FIRST DM",
+        "keywords": [],
+        "trigger": "first_dm",
+        "pool": null,
+        "link_path": null,
+        "stage": null,
+        "action": "reply_only"
+      }
+    ],
+    "pinned": [
+      {
+        "slot": 1,
+        "concept": "Best-sellers carousel — top 5 styles"
+      },
+      {
+        "slot": 2,
+        "concept": "Why MAGA — the civic-pride manifesto"
+      },
+      {
+        "slot": 3,
+        "concept": "Worn-by feature reel"
+      }
+    ]
+  },
+  "good_times": {
+    "brand_key": "good_times",
+    "brand_name": "Good Times",
+    "short_name": "Good Times",
+    "division": "apps",
+    "ig_handle": "goodtimesworldwide",
+    "website": "https://thegoodtimesworldwide.com",
+    "primary_color": "#7C3AED",
+    "accent_color": "#FBBF24",
+    "dark_color": "#08090E",
+    "category": "App / Concierge",
+    "contact_email": "hello@thegoodtimesworldwide.com",
+    "voice": "Builder energy. Clear, direct, ships fast, replies faster.",
+    "tagline": "Your concierge for nightlife in 8 cities.",
+    "bio_text": "🌙 GOOD TIMES — your nightlife concierge.\nDiscover · book tables · find your scene · 8 cities live.\nATL · CLT · DFW · DC · HOU · LA · MIA · NYC · PHX\n🔗 Get the app.",
+    "link_in_bio_label": "Download the App →",
+    "audience": "21-40 nightlife/bar/restaurant goers in 8 cities, social planners, group organizers",
+    "highlights": [
+      {
+        "i": 1,
+        "t": "GET APP",
+        "concept": "Download links"
+      },
+      {
+        "i": 2,
+        "t": "TONIGHT",
+        "concept": "What's hot tonight"
+      },
+      {
+        "i": 3,
+        "t": "TABLES",
+        "concept": "Book a table"
+      },
+      {
+        "i": 4,
+        "t": "CITIES",
+        "concept": "All 8 city accounts"
+      },
+      {
+        "i": 5,
+        "t": "VENUES",
+        "concept": "1,648 venues"
+      },
+      {
+        "i": 6,
+        "t": "PARTNERS",
+        "concept": "Add your venue"
+      },
+      {
+        "i": 7,
+        "t": "EVENTS",
+        "concept": "Concerts + parties"
+      },
+      {
+        "i": 8,
+        "t": "SPORTS",
+        "concept": "Watch parties"
+      },
+      {
+        "i": 9,
+        "t": "PRESS",
+        "concept": "Press + features"
+      },
+      {
+        "i": 10,
+        "t": "FAQ",
+        "concept": "Common questions"
+      }
+    ],
+    "pillar_mix": [
+      [
+        "Tonight Spotlights",
+        30
+      ],
+      [
+        "Venue Features",
+        25
+      ],
+      [
+        "City Pulse",
+        20
+      ],
+      [
+        "Build-In-Public/App Updates",
+        15
+      ],
+      [
+        "UGC",
+        10
+      ]
+    ],
+    "intents": [
+      {
+        "name": "DOWNLOAD / GET APP",
+        "keywords": [
+          "download",
+          "get the app",
+          "app store",
+          "play store",
+          "ios",
+          "android",
+          "app link"
+        ],
+        "pool": null,
+        "link_path": "download",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "BOOK TABLE",
+        "keywords": [
+          "table",
+          "reservation",
+          "book",
+          "reserve",
+          "section",
+          "bottle",
+          "vip"
+        ],
+        "pool": "ops",
+        "link_path": "tables",
+        "stage": 1,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "EVENT QUESTION",
+        "keywords": [
+          "tonight",
+          "this weekend",
+          "what's happening",
+          "things to do",
+          "what's open"
+        ],
+        "pool": null,
+        "link_path": "tonight",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "ADD MY VENUE",
+        "keywords": [
+          "add my venue",
+          "my bar",
+          "my restaurant",
+          "my club",
+          "list my",
+          "partner",
+          "operator"
+        ],
+        "pool": "ops",
+        "link_path": "partners",
+        "stage": 2,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "CITY LAUNCH",
+        "keywords": [
+          "come to",
+          "launch in",
+          "my city",
+          "when in",
+          "not in",
+          "not available"
+        ],
+        "pool": null,
+        "link_path": "cities",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "BUG / SUPPORT",
+        "keywords": [
+          "bug",
+          "crash",
+          "broken",
+          "not working",
+          "error",
+          "glitch",
+          "support",
+          "help with app"
+        ],
+        "pool": "ops",
+        "link_path": "support",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "ACCOUNT ISSUE",
+        "keywords": [
+          "log in",
+          "login",
+          "password",
+          "reset",
+          "my account",
+          "can't sign in"
+        ],
+        "pool": "ops",
+        "link_path": "support",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "PRESS / MEDIA",
+        "keywords": [
+          "press",
+          "journalist",
+          "feature",
+          "podcast",
+          "interview"
+        ],
+        "pool": "ops",
+        "link_path": "press",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "AMBASSADOR / CREATOR",
+        "keywords": [
+          "ambassador",
+          "creator",
+          "affiliate",
+          "promote",
+          "content"
+        ],
+        "pool": "ops",
+        "link_path": "creators",
+        "stage": 2,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "CAREERS",
+        "keywords": [
+          "job",
+          "hiring",
+          "work for",
+          "intern",
+          "careers"
+        ],
+        "pool": "ops",
+        "link_path": "careers",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "BRAND PARTNERSHIP",
+        "keywords": [
+          "brand deal",
+          "sponsor",
+          "activation",
+          "collab",
+          "partnership"
+        ],
+        "pool": "ops",
+        "link_path": "brand-partners",
+        "stage": 3,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "GENERIC FIRST DM",
+        "keywords": [],
+        "trigger": "first_dm",
+        "pool": null,
+        "link_path": null,
+        "stage": null,
+        "action": "reply_only"
+      }
+    ],
+    "pinned": [
+      {
+        "slot": 1,
+        "concept": "What Good Times is — your nightlife concierge in 8 cities"
+      },
+      {
+        "slot": 2,
+        "concept": "How it works — 3 frames (find spot · book · arrive)"
+      },
+      {
+        "slot": 3,
+        "concept": "1,648 venues live · download links"
+      }
+    ]
+  },
+  "gt_atlanta": {
+    "brand_key": "gt_atlanta",
+    "brand_name": "Good Times ATL",
+    "short_name": "Good Times ATL",
+    "division": "good_times_cities",
+    "ig_handle": "goodtimes.atl",
+    "website": "https://thegoodtimesworldwide.com/atl",
+    "primary_color": "#DC2626",
+    "accent_color": "#FBBF24",
+    "dark_color": "#08090E",
+    "category": "Local Nightlife Guide",
+    "contact_email": "atl@thegoodtimesworldwide.com",
+    "voice": "Builder energy. Clear, direct, ships fast, replies faster.",
+    "tagline": "Atlanta nightlife — curated nightly.",
+    "bio_text": "🍑 GOOD TIMES ATL\nAtlanta's nightlife concierge.\nTonight's hot spots · table reservations · what's worth your weekend.\n🔗 Get the app.",
+    "link_in_bio_label": "Download the App →",
+    "audience": "21-40 Atlanta nightlife goers, locals + visitors",
+    "highlights": [
+      {
+        "i": 1,
+        "t": "TONIGHT",
+        "concept": "What's open in ATL tonight"
+      },
+      {
+        "i": 2,
+        "t": "BEST OF",
+        "concept": "ATL's best venues"
+      },
+      {
+        "i": 3,
+        "t": "TABLES",
+        "concept": "Book a table"
+      },
+      {
+        "i": 4,
+        "t": "DATE NIGHT",
+        "concept": "Date-night-approved spots"
+      },
+      {
+        "i": 5,
+        "t": "GROUPS",
+        "concept": "Birthday / bachelorette"
+      },
+      {
+        "i": 6,
+        "t": "VISITORS",
+        "concept": "Visiting ATL? Start here."
+      },
+      {
+        "i": 7,
+        "t": "EVENTS",
+        "concept": "Concerts + parties"
+      },
+      {
+        "i": 8,
+        "t": "GET APP",
+        "concept": "Download links"
+      },
+      {
+        "i": 9,
+        "t": "ADD VENUE",
+        "concept": "Operators: list your spot"
+      },
+      {
+        "i": 10,
+        "t": "FAQ",
+        "concept": "Common questions"
+      }
+    ],
+    "pillar_mix": [
+      [
+        "Tonight Spotlights",
+        35
+      ],
+      [
+        "ATL Venues",
+        25
+      ],
+      [
+        "Local Culture",
+        20
+      ],
+      [
+        "UGC",
+        10
+      ],
+      [
+        "App Updates",
+        10
+      ]
+    ],
+    "intents": [
+      {
+        "name": "TONIGHT — what's open",
+        "keywords": [
+          "tonight",
+          "right now",
+          "this weekend",
+          "saturday",
+          "friday",
+          "sunday",
+          "what's open",
+          "what's poppin"
+        ],
+        "pool": null,
+        "link_path": "tonight",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "BOOK TABLE",
+        "keywords": [
+          "table",
+          "reservation",
+          "reserve",
+          "section",
+          "bottle",
+          "vip"
+        ],
+        "pool": "ops",
+        "link_path": "tables",
+        "stage": 1,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "BIRTHDAY / GROUP",
+        "keywords": [
+          "birthday",
+          "bachelor",
+          "bachelorette",
+          "group",
+          "party of",
+          "large group"
+        ],
+        "pool": "ops",
+        "link_path": "tables",
+        "stage": 1,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "DATE NIGHT",
+        "keywords": [
+          "date night",
+          "first date",
+          "romantic",
+          "intimate",
+          "dinner spot"
+        ],
+        "pool": null,
+        "link_path": "date-night",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "VISITING",
+        "keywords": [
+          "visiting atlanta",
+          "in town",
+          "tourist",
+          "first time",
+          "just landed"
+        ],
+        "pool": null,
+        "link_path": "visitors",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "GET APP",
+        "keywords": [
+          "download",
+          "get the app",
+          "app store",
+          "play store",
+          "ios",
+          "android"
+        ],
+        "pool": null,
+        "link_path": "download",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "ADD MY VENUE",
+        "keywords": [
+          "add my venue",
+          "my bar",
+          "my restaurant",
+          "my club",
+          "operator",
+          "partner"
+        ],
+        "pool": "ops",
+        "link_path": "partners",
+        "stage": 2,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "MUSIC / DJ NIGHT",
+        "keywords": [
+          "dj",
+          "live music",
+          "band",
+          "concert",
+          "r&b",
+          "hip hop",
+          "afro",
+          "reggae",
+          "techno"
+        ],
+        "pool": null,
+        "link_path": "music",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "FOOD QUESTION",
+        "keywords": [
+          "restaurant",
+          "brunch",
+          "dinner",
+          "late night food",
+          "best food"
+        ],
+        "pool": null,
+        "link_path": "food",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "AMBASSADOR / LOCAL",
+        "keywords": [
+          "ambassador",
+          "local",
+          "creator",
+          "represent",
+          "insider"
+        ],
+        "pool": "ops",
+        "link_path": "creators",
+        "stage": 2,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "BRAND PARTNERSHIP",
+        "keywords": [
+          "sponsor",
+          "brand deal",
+          "activation",
+          "partnership",
+          "collab"
+        ],
+        "pool": "ops",
+        "link_path": "brand-partners",
+        "stage": 3,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "GENERIC FIRST DM",
+        "keywords": [],
+        "trigger": "first_dm",
+        "pool": null,
+        "link_path": null,
+        "stage": null,
+        "action": "reply_only"
+      }
+    ],
+    "pinned": [
+      {
+        "slot": 1,
+        "concept": "Why ATL loves Good Times"
+      },
+      {
+        "slot": 2,
+        "concept": "Top 5 venues in ATL this month"
+      },
+      {
+        "slot": 3,
+        "concept": "How to book a table in 30 seconds"
+      }
+    ]
+  },
+  "gt_charlotte": {
+    "brand_key": "gt_charlotte",
+    "brand_name": "Good Times CLT",
+    "short_name": "Good Times CLT",
+    "division": "good_times_cities",
+    "ig_handle": "goodtimes.clt",
+    "website": "https://thegoodtimesworldwide.com/clt",
+    "primary_color": "#1E40AF",
+    "accent_color": "#FBBF24",
+    "dark_color": "#08090E",
+    "category": "Local Nightlife Guide",
+    "contact_email": "clt@thegoodtimesworldwide.com",
+    "voice": "Builder energy. Clear, direct, ships fast, replies faster.",
+    "tagline": "Charlotte nightlife — curated nightly.",
+    "bio_text": "🐝 GOOD TIMES CLT\nCharlotte's nightlife concierge.\nTonight's hot spots · table reservations · what's worth your weekend.\n🔗 Get the app.",
+    "link_in_bio_label": "Download the App →",
+    "audience": "21-40 Charlotte nightlife goers, locals + visitors",
+    "highlights": [
+      {
+        "i": 1,
+        "t": "TONIGHT",
+        "concept": "What's open in CLT tonight"
+      },
+      {
+        "i": 2,
+        "t": "BEST OF",
+        "concept": "CLT's best venues"
+      },
+      {
+        "i": 3,
+        "t": "TABLES",
+        "concept": "Book a table"
+      },
+      {
+        "i": 4,
+        "t": "DATE NIGHT",
+        "concept": "Date-night-approved spots"
+      },
+      {
+        "i": 5,
+        "t": "GROUPS",
+        "concept": "Birthday / bachelorette"
+      },
+      {
+        "i": 6,
+        "t": "VISITORS",
+        "concept": "Visiting CLT? Start here."
+      },
+      {
+        "i": 7,
+        "t": "EVENTS",
+        "concept": "Concerts + parties"
+      },
+      {
+        "i": 8,
+        "t": "GET APP",
+        "concept": "Download links"
+      },
+      {
+        "i": 9,
+        "t": "ADD VENUE",
+        "concept": "Operators: list your spot"
+      },
+      {
+        "i": 10,
+        "t": "FAQ",
+        "concept": "Common questions"
+      }
+    ],
+    "pillar_mix": [
+      [
+        "Tonight Spotlights",
+        35
+      ],
+      [
+        "CLT Venues",
+        25
+      ],
+      [
+        "Local Culture",
+        20
+      ],
+      [
+        "UGC",
+        10
+      ],
+      [
+        "App Updates",
+        10
+      ]
+    ],
+    "intents": [
+      {
+        "name": "TONIGHT — what's open",
+        "keywords": [
+          "tonight",
+          "right now",
+          "this weekend",
+          "saturday",
+          "friday",
+          "sunday",
+          "what's open",
+          "what's poppin"
+        ],
+        "pool": null,
+        "link_path": "tonight",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "BOOK TABLE",
+        "keywords": [
+          "table",
+          "reservation",
+          "reserve",
+          "section",
+          "bottle",
+          "vip"
+        ],
+        "pool": "ops",
+        "link_path": "tables",
+        "stage": 1,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "BIRTHDAY / GROUP",
+        "keywords": [
+          "birthday",
+          "bachelor",
+          "bachelorette",
+          "group",
+          "party of",
+          "large group"
+        ],
+        "pool": "ops",
+        "link_path": "tables",
+        "stage": 1,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "DATE NIGHT",
+        "keywords": [
+          "date night",
+          "first date",
+          "romantic",
+          "intimate",
+          "dinner spot"
+        ],
+        "pool": null,
+        "link_path": "date-night",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "VISITING",
+        "keywords": [
+          "visiting charlotte",
+          "in town",
+          "tourist",
+          "first time",
+          "just landed"
+        ],
+        "pool": null,
+        "link_path": "visitors",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "GET APP",
+        "keywords": [
+          "download",
+          "get the app",
+          "app store",
+          "play store",
+          "ios",
+          "android"
+        ],
+        "pool": null,
+        "link_path": "download",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "ADD MY VENUE",
+        "keywords": [
+          "add my venue",
+          "my bar",
+          "my restaurant",
+          "my club",
+          "operator",
+          "partner"
+        ],
+        "pool": "ops",
+        "link_path": "partners",
+        "stage": 2,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "MUSIC / DJ NIGHT",
+        "keywords": [
+          "dj",
+          "live music",
+          "band",
+          "concert",
+          "r&b",
+          "hip hop",
+          "afro",
+          "reggae",
+          "techno"
+        ],
+        "pool": null,
+        "link_path": "music",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "FOOD QUESTION",
+        "keywords": [
+          "restaurant",
+          "brunch",
+          "dinner",
+          "late night food",
+          "best food"
+        ],
+        "pool": null,
+        "link_path": "food",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "AMBASSADOR / LOCAL",
+        "keywords": [
+          "ambassador",
+          "local",
+          "creator",
+          "represent",
+          "insider"
+        ],
+        "pool": "ops",
+        "link_path": "creators",
+        "stage": 2,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "BRAND PARTNERSHIP",
+        "keywords": [
+          "sponsor",
+          "brand deal",
+          "activation",
+          "partnership",
+          "collab"
+        ],
+        "pool": "ops",
+        "link_path": "brand-partners",
+        "stage": 3,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "GENERIC FIRST DM",
+        "keywords": [],
+        "trigger": "first_dm",
+        "pool": null,
+        "link_path": null,
+        "stage": null,
+        "action": "reply_only"
+      }
+    ],
+    "pinned": [
+      {
+        "slot": 1,
+        "concept": "Why CLT loves Good Times"
+      },
+      {
+        "slot": 2,
+        "concept": "Top 5 venues in CLT this month"
+      },
+      {
+        "slot": 3,
+        "concept": "How to book a table in 30 seconds"
+      }
+    ]
+  },
+  "gt_dallas": {
+    "brand_key": "gt_dallas",
+    "brand_name": "Good Times DFW",
+    "short_name": "Good Times DFW",
+    "division": "good_times_cities",
+    "ig_handle": "goodtimes.dfw",
+    "website": "https://thegoodtimesworldwide.com/dfw",
+    "primary_color": "#0F766E",
+    "accent_color": "#FBBF24",
+    "dark_color": "#08090E",
+    "category": "Local Nightlife Guide",
+    "contact_email": "dfw@thegoodtimesworldwide.com",
+    "voice": "Builder energy. Clear, direct, ships fast, replies faster.",
+    "tagline": "Dallas nightlife — curated nightly.",
+    "bio_text": "⭐ GOOD TIMES DFW\nDallas's nightlife concierge.\nTonight's hot spots · table reservations · what's worth your weekend.\n🔗 Get the app.",
+    "link_in_bio_label": "Download the App →",
+    "audience": "21-40 Dallas nightlife goers, locals + visitors",
+    "highlights": [
+      {
+        "i": 1,
+        "t": "TONIGHT",
+        "concept": "What's open in DFW tonight"
+      },
+      {
+        "i": 2,
+        "t": "BEST OF",
+        "concept": "DFW's best venues"
+      },
+      {
+        "i": 3,
+        "t": "TABLES",
+        "concept": "Book a table"
+      },
+      {
+        "i": 4,
+        "t": "DATE NIGHT",
+        "concept": "Date-night-approved spots"
+      },
+      {
+        "i": 5,
+        "t": "GROUPS",
+        "concept": "Birthday / bachelorette"
+      },
+      {
+        "i": 6,
+        "t": "VISITORS",
+        "concept": "Visiting DFW? Start here."
+      },
+      {
+        "i": 7,
+        "t": "EVENTS",
+        "concept": "Concerts + parties"
+      },
+      {
+        "i": 8,
+        "t": "GET APP",
+        "concept": "Download links"
+      },
+      {
+        "i": 9,
+        "t": "ADD VENUE",
+        "concept": "Operators: list your spot"
+      },
+      {
+        "i": 10,
+        "t": "FAQ",
+        "concept": "Common questions"
+      }
+    ],
+    "pillar_mix": [
+      [
+        "Tonight Spotlights",
+        35
+      ],
+      [
+        "DFW Venues",
+        25
+      ],
+      [
+        "Local Culture",
+        20
+      ],
+      [
+        "UGC",
+        10
+      ],
+      [
+        "App Updates",
+        10
+      ]
+    ],
+    "intents": [
+      {
+        "name": "TONIGHT — what's open",
+        "keywords": [
+          "tonight",
+          "right now",
+          "this weekend",
+          "saturday",
+          "friday",
+          "sunday",
+          "what's open",
+          "what's poppin"
+        ],
+        "pool": null,
+        "link_path": "tonight",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "BOOK TABLE",
+        "keywords": [
+          "table",
+          "reservation",
+          "reserve",
+          "section",
+          "bottle",
+          "vip"
+        ],
+        "pool": "ops",
+        "link_path": "tables",
+        "stage": 1,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "BIRTHDAY / GROUP",
+        "keywords": [
+          "birthday",
+          "bachelor",
+          "bachelorette",
+          "group",
+          "party of",
+          "large group"
+        ],
+        "pool": "ops",
+        "link_path": "tables",
+        "stage": 1,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "DATE NIGHT",
+        "keywords": [
+          "date night",
+          "first date",
+          "romantic",
+          "intimate",
+          "dinner spot"
+        ],
+        "pool": null,
+        "link_path": "date-night",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "VISITING",
+        "keywords": [
+          "visiting dallas",
+          "in town",
+          "tourist",
+          "first time",
+          "just landed"
+        ],
+        "pool": null,
+        "link_path": "visitors",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "GET APP",
+        "keywords": [
+          "download",
+          "get the app",
+          "app store",
+          "play store",
+          "ios",
+          "android"
+        ],
+        "pool": null,
+        "link_path": "download",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "ADD MY VENUE",
+        "keywords": [
+          "add my venue",
+          "my bar",
+          "my restaurant",
+          "my club",
+          "operator",
+          "partner"
+        ],
+        "pool": "ops",
+        "link_path": "partners",
+        "stage": 2,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "MUSIC / DJ NIGHT",
+        "keywords": [
+          "dj",
+          "live music",
+          "band",
+          "concert",
+          "r&b",
+          "hip hop",
+          "afro",
+          "reggae",
+          "techno"
+        ],
+        "pool": null,
+        "link_path": "music",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "FOOD QUESTION",
+        "keywords": [
+          "restaurant",
+          "brunch",
+          "dinner",
+          "late night food",
+          "best food"
+        ],
+        "pool": null,
+        "link_path": "food",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "AMBASSADOR / LOCAL",
+        "keywords": [
+          "ambassador",
+          "local",
+          "creator",
+          "represent",
+          "insider"
+        ],
+        "pool": "ops",
+        "link_path": "creators",
+        "stage": 2,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "BRAND PARTNERSHIP",
+        "keywords": [
+          "sponsor",
+          "brand deal",
+          "activation",
+          "partnership",
+          "collab"
+        ],
+        "pool": "ops",
+        "link_path": "brand-partners",
+        "stage": 3,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "GENERIC FIRST DM",
+        "keywords": [],
+        "trigger": "first_dm",
+        "pool": null,
+        "link_path": null,
+        "stage": null,
+        "action": "reply_only"
+      }
+    ],
+    "pinned": [
+      {
+        "slot": 1,
+        "concept": "Why DFW loves Good Times"
+      },
+      {
+        "slot": 2,
+        "concept": "Top 5 venues in DFW this month"
+      },
+      {
+        "slot": 3,
+        "concept": "How to book a table in 30 seconds"
+      }
+    ]
+  },
+  "gt_dc": {
+    "brand_key": "gt_dc",
+    "brand_name": "Good Times DC",
+    "short_name": "Good Times DC",
+    "division": "good_times_cities",
+    "ig_handle": "goodtimes.dc",
+    "website": "https://thegoodtimesworldwide.com/dc",
+    "primary_color": "#7C2D12",
+    "accent_color": "#FBBF24",
+    "dark_color": "#08090E",
+    "category": "Local Nightlife Guide",
+    "contact_email": "dc@thegoodtimesworldwide.com",
+    "voice": "Builder energy. Clear, direct, ships fast, replies faster.",
+    "tagline": "Washington DC nightlife — curated nightly.",
+    "bio_text": "🏛 GOOD TIMES DC\nWashington DC's nightlife concierge.\nTonight's hot spots · table reservations · what's worth your weekend.\n🔗 Get the app.",
+    "link_in_bio_label": "Download the App →",
+    "audience": "21-40 Washington DC nightlife goers, locals + visitors",
+    "highlights": [
+      {
+        "i": 1,
+        "t": "TONIGHT",
+        "concept": "What's open in DC tonight"
+      },
+      {
+        "i": 2,
+        "t": "BEST OF",
+        "concept": "DC's best venues"
+      },
+      {
+        "i": 3,
+        "t": "TABLES",
+        "concept": "Book a table"
+      },
+      {
+        "i": 4,
+        "t": "DATE NIGHT",
+        "concept": "Date-night-approved spots"
+      },
+      {
+        "i": 5,
+        "t": "GROUPS",
+        "concept": "Birthday / bachelorette"
+      },
+      {
+        "i": 6,
+        "t": "VISITORS",
+        "concept": "Visiting DC? Start here."
+      },
+      {
+        "i": 7,
+        "t": "EVENTS",
+        "concept": "Concerts + parties"
+      },
+      {
+        "i": 8,
+        "t": "GET APP",
+        "concept": "Download links"
+      },
+      {
+        "i": 9,
+        "t": "ADD VENUE",
+        "concept": "Operators: list your spot"
+      },
+      {
+        "i": 10,
+        "t": "FAQ",
+        "concept": "Common questions"
+      }
+    ],
+    "pillar_mix": [
+      [
+        "Tonight Spotlights",
+        35
+      ],
+      [
+        "DC Venues",
+        25
+      ],
+      [
+        "Local Culture",
+        20
+      ],
+      [
+        "UGC",
+        10
+      ],
+      [
+        "App Updates",
+        10
+      ]
+    ],
+    "intents": [
+      {
+        "name": "TONIGHT — what's open",
+        "keywords": [
+          "tonight",
+          "right now",
+          "this weekend",
+          "saturday",
+          "friday",
+          "sunday",
+          "what's open",
+          "what's poppin"
+        ],
+        "pool": null,
+        "link_path": "tonight",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "BOOK TABLE",
+        "keywords": [
+          "table",
+          "reservation",
+          "reserve",
+          "section",
+          "bottle",
+          "vip"
+        ],
+        "pool": "ops",
+        "link_path": "tables",
+        "stage": 1,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "BIRTHDAY / GROUP",
+        "keywords": [
+          "birthday",
+          "bachelor",
+          "bachelorette",
+          "group",
+          "party of",
+          "large group"
+        ],
+        "pool": "ops",
+        "link_path": "tables",
+        "stage": 1,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "DATE NIGHT",
+        "keywords": [
+          "date night",
+          "first date",
+          "romantic",
+          "intimate",
+          "dinner spot"
+        ],
+        "pool": null,
+        "link_path": "date-night",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "VISITING",
+        "keywords": [
+          "visiting washington dc",
+          "in town",
+          "tourist",
+          "first time",
+          "just landed"
+        ],
+        "pool": null,
+        "link_path": "visitors",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "GET APP",
+        "keywords": [
+          "download",
+          "get the app",
+          "app store",
+          "play store",
+          "ios",
+          "android"
+        ],
+        "pool": null,
+        "link_path": "download",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "ADD MY VENUE",
+        "keywords": [
+          "add my venue",
+          "my bar",
+          "my restaurant",
+          "my club",
+          "operator",
+          "partner"
+        ],
+        "pool": "ops",
+        "link_path": "partners",
+        "stage": 2,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "MUSIC / DJ NIGHT",
+        "keywords": [
+          "dj",
+          "live music",
+          "band",
+          "concert",
+          "r&b",
+          "hip hop",
+          "afro",
+          "reggae",
+          "techno"
+        ],
+        "pool": null,
+        "link_path": "music",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "FOOD QUESTION",
+        "keywords": [
+          "restaurant",
+          "brunch",
+          "dinner",
+          "late night food",
+          "best food"
+        ],
+        "pool": null,
+        "link_path": "food",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "AMBASSADOR / LOCAL",
+        "keywords": [
+          "ambassador",
+          "local",
+          "creator",
+          "represent",
+          "insider"
+        ],
+        "pool": "ops",
+        "link_path": "creators",
+        "stage": 2,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "BRAND PARTNERSHIP",
+        "keywords": [
+          "sponsor",
+          "brand deal",
+          "activation",
+          "partnership",
+          "collab"
+        ],
+        "pool": "ops",
+        "link_path": "brand-partners",
+        "stage": 3,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "GENERIC FIRST DM",
+        "keywords": [],
+        "trigger": "first_dm",
+        "pool": null,
+        "link_path": null,
+        "stage": null,
+        "action": "reply_only"
+      }
+    ],
+    "pinned": [
+      {
+        "slot": 1,
+        "concept": "Why DC loves Good Times"
+      },
+      {
+        "slot": 2,
+        "concept": "Top 5 venues in DC this month"
+      },
+      {
+        "slot": 3,
+        "concept": "How to book a table in 30 seconds"
+      }
+    ]
+  },
+  "gt_houston": {
+    "brand_key": "gt_houston",
+    "brand_name": "Good Times HOU",
+    "short_name": "Good Times HOU",
+    "division": "good_times_cities",
+    "ig_handle": "goodtimes.hou",
+    "website": "https://thegoodtimesworldwide.com/hou",
+    "primary_color": "#9333EA",
+    "accent_color": "#FBBF24",
+    "dark_color": "#08090E",
+    "category": "Local Nightlife Guide",
+    "contact_email": "hou@thegoodtimesworldwide.com",
+    "voice": "Builder energy. Clear, direct, ships fast, replies faster.",
+    "tagline": "Houston nightlife — curated nightly.",
+    "bio_text": "🚀 GOOD TIMES HOU\nHouston's nightlife concierge.\nTonight's hot spots · table reservations · what's worth your weekend.\n🔗 Get the app.",
+    "link_in_bio_label": "Download the App →",
+    "audience": "21-40 Houston nightlife goers, locals + visitors",
+    "highlights": [
+      {
+        "i": 1,
+        "t": "TONIGHT",
+        "concept": "What's open in HOU tonight"
+      },
+      {
+        "i": 2,
+        "t": "BEST OF",
+        "concept": "HOU's best venues"
+      },
+      {
+        "i": 3,
+        "t": "TABLES",
+        "concept": "Book a table"
+      },
+      {
+        "i": 4,
+        "t": "DATE NIGHT",
+        "concept": "Date-night-approved spots"
+      },
+      {
+        "i": 5,
+        "t": "GROUPS",
+        "concept": "Birthday / bachelorette"
+      },
+      {
+        "i": 6,
+        "t": "VISITORS",
+        "concept": "Visiting HOU? Start here."
+      },
+      {
+        "i": 7,
+        "t": "EVENTS",
+        "concept": "Concerts + parties"
+      },
+      {
+        "i": 8,
+        "t": "GET APP",
+        "concept": "Download links"
+      },
+      {
+        "i": 9,
+        "t": "ADD VENUE",
+        "concept": "Operators: list your spot"
+      },
+      {
+        "i": 10,
+        "t": "FAQ",
+        "concept": "Common questions"
+      }
+    ],
+    "pillar_mix": [
+      [
+        "Tonight Spotlights",
+        35
+      ],
+      [
+        "HOU Venues",
+        25
+      ],
+      [
+        "Local Culture",
+        20
+      ],
+      [
+        "UGC",
+        10
+      ],
+      [
+        "App Updates",
+        10
+      ]
+    ],
+    "intents": [
+      {
+        "name": "TONIGHT — what's open",
+        "keywords": [
+          "tonight",
+          "right now",
+          "this weekend",
+          "saturday",
+          "friday",
+          "sunday",
+          "what's open",
+          "what's poppin"
+        ],
+        "pool": null,
+        "link_path": "tonight",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "BOOK TABLE",
+        "keywords": [
+          "table",
+          "reservation",
+          "reserve",
+          "section",
+          "bottle",
+          "vip"
+        ],
+        "pool": "ops",
+        "link_path": "tables",
+        "stage": 1,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "BIRTHDAY / GROUP",
+        "keywords": [
+          "birthday",
+          "bachelor",
+          "bachelorette",
+          "group",
+          "party of",
+          "large group"
+        ],
+        "pool": "ops",
+        "link_path": "tables",
+        "stage": 1,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "DATE NIGHT",
+        "keywords": [
+          "date night",
+          "first date",
+          "romantic",
+          "intimate",
+          "dinner spot"
+        ],
+        "pool": null,
+        "link_path": "date-night",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "VISITING",
+        "keywords": [
+          "visiting houston",
+          "in town",
+          "tourist",
+          "first time",
+          "just landed"
+        ],
+        "pool": null,
+        "link_path": "visitors",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "GET APP",
+        "keywords": [
+          "download",
+          "get the app",
+          "app store",
+          "play store",
+          "ios",
+          "android"
+        ],
+        "pool": null,
+        "link_path": "download",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "ADD MY VENUE",
+        "keywords": [
+          "add my venue",
+          "my bar",
+          "my restaurant",
+          "my club",
+          "operator",
+          "partner"
+        ],
+        "pool": "ops",
+        "link_path": "partners",
+        "stage": 2,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "MUSIC / DJ NIGHT",
+        "keywords": [
+          "dj",
+          "live music",
+          "band",
+          "concert",
+          "r&b",
+          "hip hop",
+          "afro",
+          "reggae",
+          "techno"
+        ],
+        "pool": null,
+        "link_path": "music",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "FOOD QUESTION",
+        "keywords": [
+          "restaurant",
+          "brunch",
+          "dinner",
+          "late night food",
+          "best food"
+        ],
+        "pool": null,
+        "link_path": "food",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "AMBASSADOR / LOCAL",
+        "keywords": [
+          "ambassador",
+          "local",
+          "creator",
+          "represent",
+          "insider"
+        ],
+        "pool": "ops",
+        "link_path": "creators",
+        "stage": 2,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "BRAND PARTNERSHIP",
+        "keywords": [
+          "sponsor",
+          "brand deal",
+          "activation",
+          "partnership",
+          "collab"
+        ],
+        "pool": "ops",
+        "link_path": "brand-partners",
+        "stage": 3,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "GENERIC FIRST DM",
+        "keywords": [],
+        "trigger": "first_dm",
+        "pool": null,
+        "link_path": null,
+        "stage": null,
+        "action": "reply_only"
+      }
+    ],
+    "pinned": [
+      {
+        "slot": 1,
+        "concept": "Why HOU loves Good Times"
+      },
+      {
+        "slot": 2,
+        "concept": "Top 5 venues in HOU this month"
+      },
+      {
+        "slot": 3,
+        "concept": "How to book a table in 30 seconds"
+      }
+    ]
+  },
+  "gt_losangeles": {
+    "brand_key": "gt_losangeles",
+    "brand_name": "Good Times LA",
+    "short_name": "Good Times LA",
+    "division": "good_times_cities",
+    "ig_handle": "goodtimes.la",
+    "website": "https://thegoodtimesworldwide.com/la",
+    "primary_color": "#F59E0B",
+    "accent_color": "#FBBF24",
+    "dark_color": "#08090E",
+    "category": "Local Nightlife Guide",
+    "contact_email": "la@thegoodtimesworldwide.com",
+    "voice": "Builder energy. Clear, direct, ships fast, replies faster.",
+    "tagline": "Los Angeles nightlife — curated nightly.",
+    "bio_text": "🌴 GOOD TIMES LA\nLos Angeles's nightlife concierge.\nTonight's hot spots · table reservations · what's worth your weekend.\n🔗 Get the app.",
+    "link_in_bio_label": "Download the App →",
+    "audience": "21-40 Los Angeles nightlife goers, locals + visitors",
+    "highlights": [
+      {
+        "i": 1,
+        "t": "TONIGHT",
+        "concept": "What's open in LA tonight"
+      },
+      {
+        "i": 2,
+        "t": "BEST OF",
+        "concept": "LA's best venues"
+      },
+      {
+        "i": 3,
+        "t": "TABLES",
+        "concept": "Book a table"
+      },
+      {
+        "i": 4,
+        "t": "DATE NIGHT",
+        "concept": "Date-night-approved spots"
+      },
+      {
+        "i": 5,
+        "t": "GROUPS",
+        "concept": "Birthday / bachelorette"
+      },
+      {
+        "i": 6,
+        "t": "VISITORS",
+        "concept": "Visiting LA? Start here."
+      },
+      {
+        "i": 7,
+        "t": "EVENTS",
+        "concept": "Concerts + parties"
+      },
+      {
+        "i": 8,
+        "t": "GET APP",
+        "concept": "Download links"
+      },
+      {
+        "i": 9,
+        "t": "ADD VENUE",
+        "concept": "Operators: list your spot"
+      },
+      {
+        "i": 10,
+        "t": "FAQ",
+        "concept": "Common questions"
+      }
+    ],
+    "pillar_mix": [
+      [
+        "Tonight Spotlights",
+        35
+      ],
+      [
+        "LA Venues",
+        25
+      ],
+      [
+        "Local Culture",
+        20
+      ],
+      [
+        "UGC",
+        10
+      ],
+      [
+        "App Updates",
+        10
+      ]
+    ],
+    "intents": [
+      {
+        "name": "TONIGHT — what's open",
+        "keywords": [
+          "tonight",
+          "right now",
+          "this weekend",
+          "saturday",
+          "friday",
+          "sunday",
+          "what's open",
+          "what's poppin"
+        ],
+        "pool": null,
+        "link_path": "tonight",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "BOOK TABLE",
+        "keywords": [
+          "table",
+          "reservation",
+          "reserve",
+          "section",
+          "bottle",
+          "vip"
+        ],
+        "pool": "ops",
+        "link_path": "tables",
+        "stage": 1,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "BIRTHDAY / GROUP",
+        "keywords": [
+          "birthday",
+          "bachelor",
+          "bachelorette",
+          "group",
+          "party of",
+          "large group"
+        ],
+        "pool": "ops",
+        "link_path": "tables",
+        "stage": 1,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "DATE NIGHT",
+        "keywords": [
+          "date night",
+          "first date",
+          "romantic",
+          "intimate",
+          "dinner spot"
+        ],
+        "pool": null,
+        "link_path": "date-night",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "VISITING",
+        "keywords": [
+          "visiting los angeles",
+          "in town",
+          "tourist",
+          "first time",
+          "just landed"
+        ],
+        "pool": null,
+        "link_path": "visitors",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "GET APP",
+        "keywords": [
+          "download",
+          "get the app",
+          "app store",
+          "play store",
+          "ios",
+          "android"
+        ],
+        "pool": null,
+        "link_path": "download",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "ADD MY VENUE",
+        "keywords": [
+          "add my venue",
+          "my bar",
+          "my restaurant",
+          "my club",
+          "operator",
+          "partner"
+        ],
+        "pool": "ops",
+        "link_path": "partners",
+        "stage": 2,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "MUSIC / DJ NIGHT",
+        "keywords": [
+          "dj",
+          "live music",
+          "band",
+          "concert",
+          "r&b",
+          "hip hop",
+          "afro",
+          "reggae",
+          "techno"
+        ],
+        "pool": null,
+        "link_path": "music",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "FOOD QUESTION",
+        "keywords": [
+          "restaurant",
+          "brunch",
+          "dinner",
+          "late night food",
+          "best food"
+        ],
+        "pool": null,
+        "link_path": "food",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "AMBASSADOR / LOCAL",
+        "keywords": [
+          "ambassador",
+          "local",
+          "creator",
+          "represent",
+          "insider"
+        ],
+        "pool": "ops",
+        "link_path": "creators",
+        "stage": 2,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "BRAND PARTNERSHIP",
+        "keywords": [
+          "sponsor",
+          "brand deal",
+          "activation",
+          "partnership",
+          "collab"
+        ],
+        "pool": "ops",
+        "link_path": "brand-partners",
+        "stage": 3,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "GENERIC FIRST DM",
+        "keywords": [],
+        "trigger": "first_dm",
+        "pool": null,
+        "link_path": null,
+        "stage": null,
+        "action": "reply_only"
+      }
+    ],
+    "pinned": [
+      {
+        "slot": 1,
+        "concept": "Why LA loves Good Times"
+      },
+      {
+        "slot": 2,
+        "concept": "Top 5 venues in LA this month"
+      },
+      {
+        "slot": 3,
+        "concept": "How to book a table in 30 seconds"
+      }
+    ]
+  },
+  "gt_miami": {
+    "brand_key": "gt_miami",
+    "brand_name": "Good Times MIA",
+    "short_name": "Good Times MIA",
+    "division": "good_times_cities",
+    "ig_handle": "goodtimes.mia",
+    "website": "https://thegoodtimesworldwide.com/mia",
+    "primary_color": "#EC4899",
+    "accent_color": "#FBBF24",
+    "dark_color": "#08090E",
+    "category": "Local Nightlife Guide",
+    "contact_email": "mia@thegoodtimesworldwide.com",
+    "voice": "Builder energy. Clear, direct, ships fast, replies faster.",
+    "tagline": "Miami nightlife — curated nightly.",
+    "bio_text": "🌊 GOOD TIMES MIA\nMiami's nightlife concierge.\nTonight's hot spots · table reservations · what's worth your weekend.\n🔗 Get the app.",
+    "link_in_bio_label": "Download the App →",
+    "audience": "21-40 Miami nightlife goers, locals + visitors",
+    "highlights": [
+      {
+        "i": 1,
+        "t": "TONIGHT",
+        "concept": "What's open in MIA tonight"
+      },
+      {
+        "i": 2,
+        "t": "BEST OF",
+        "concept": "MIA's best venues"
+      },
+      {
+        "i": 3,
+        "t": "TABLES",
+        "concept": "Book a table"
+      },
+      {
+        "i": 4,
+        "t": "DATE NIGHT",
+        "concept": "Date-night-approved spots"
+      },
+      {
+        "i": 5,
+        "t": "GROUPS",
+        "concept": "Birthday / bachelorette"
+      },
+      {
+        "i": 6,
+        "t": "VISITORS",
+        "concept": "Visiting MIA? Start here."
+      },
+      {
+        "i": 7,
+        "t": "EVENTS",
+        "concept": "Concerts + parties"
+      },
+      {
+        "i": 8,
+        "t": "GET APP",
+        "concept": "Download links"
+      },
+      {
+        "i": 9,
+        "t": "ADD VENUE",
+        "concept": "Operators: list your spot"
+      },
+      {
+        "i": 10,
+        "t": "FAQ",
+        "concept": "Common questions"
+      }
+    ],
+    "pillar_mix": [
+      [
+        "Tonight Spotlights",
+        35
+      ],
+      [
+        "MIA Venues",
+        25
+      ],
+      [
+        "Local Culture",
+        20
+      ],
+      [
+        "UGC",
+        10
+      ],
+      [
+        "App Updates",
+        10
+      ]
+    ],
+    "intents": [
+      {
+        "name": "TONIGHT — what's open",
+        "keywords": [
+          "tonight",
+          "right now",
+          "this weekend",
+          "saturday",
+          "friday",
+          "sunday",
+          "what's open",
+          "what's poppin"
+        ],
+        "pool": null,
+        "link_path": "tonight",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "BOOK TABLE",
+        "keywords": [
+          "table",
+          "reservation",
+          "reserve",
+          "section",
+          "bottle",
+          "vip"
+        ],
+        "pool": "ops",
+        "link_path": "tables",
+        "stage": 1,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "BIRTHDAY / GROUP",
+        "keywords": [
+          "birthday",
+          "bachelor",
+          "bachelorette",
+          "group",
+          "party of",
+          "large group"
+        ],
+        "pool": "ops",
+        "link_path": "tables",
+        "stage": 1,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "DATE NIGHT",
+        "keywords": [
+          "date night",
+          "first date",
+          "romantic",
+          "intimate",
+          "dinner spot"
+        ],
+        "pool": null,
+        "link_path": "date-night",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "VISITING",
+        "keywords": [
+          "visiting miami",
+          "in town",
+          "tourist",
+          "first time",
+          "just landed"
+        ],
+        "pool": null,
+        "link_path": "visitors",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "GET APP",
+        "keywords": [
+          "download",
+          "get the app",
+          "app store",
+          "play store",
+          "ios",
+          "android"
+        ],
+        "pool": null,
+        "link_path": "download",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "ADD MY VENUE",
+        "keywords": [
+          "add my venue",
+          "my bar",
+          "my restaurant",
+          "my club",
+          "operator",
+          "partner"
+        ],
+        "pool": "ops",
+        "link_path": "partners",
+        "stage": 2,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "MUSIC / DJ NIGHT",
+        "keywords": [
+          "dj",
+          "live music",
+          "band",
+          "concert",
+          "r&b",
+          "hip hop",
+          "afro",
+          "reggae",
+          "techno"
+        ],
+        "pool": null,
+        "link_path": "music",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "FOOD QUESTION",
+        "keywords": [
+          "restaurant",
+          "brunch",
+          "dinner",
+          "late night food",
+          "best food"
+        ],
+        "pool": null,
+        "link_path": "food",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "AMBASSADOR / LOCAL",
+        "keywords": [
+          "ambassador",
+          "local",
+          "creator",
+          "represent",
+          "insider"
+        ],
+        "pool": "ops",
+        "link_path": "creators",
+        "stage": 2,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "BRAND PARTNERSHIP",
+        "keywords": [
+          "sponsor",
+          "brand deal",
+          "activation",
+          "partnership",
+          "collab"
+        ],
+        "pool": "ops",
+        "link_path": "brand-partners",
+        "stage": 3,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "GENERIC FIRST DM",
+        "keywords": [],
+        "trigger": "first_dm",
+        "pool": null,
+        "link_path": null,
+        "stage": null,
+        "action": "reply_only"
+      }
+    ],
+    "pinned": [
+      {
+        "slot": 1,
+        "concept": "Why MIA loves Good Times"
+      },
+      {
+        "slot": 2,
+        "concept": "Top 5 venues in MIA this month"
+      },
+      {
+        "slot": 3,
+        "concept": "How to book a table in 30 seconds"
+      }
+    ]
+  },
+  "gt_newyork": {
+    "brand_key": "gt_newyork",
+    "brand_name": "Good Times NYC",
+    "short_name": "Good Times NYC",
+    "division": "good_times_cities",
+    "ig_handle": "goodtimes.nyc",
+    "website": "https://thegoodtimesworldwide.com/nyc",
+    "primary_color": "#FBBF24",
+    "accent_color": "#FBBF24",
+    "dark_color": "#08090E",
+    "category": "Local Nightlife Guide",
+    "contact_email": "nyc@thegoodtimesworldwide.com",
+    "voice": "Builder energy. Clear, direct, ships fast, replies faster.",
+    "tagline": "New York nightlife — curated nightly.",
+    "bio_text": "🗽 GOOD TIMES NYC\nNew York's nightlife concierge.\nTonight's hot spots · table reservations · what's worth your weekend.\n🔗 Get the app.",
+    "link_in_bio_label": "Download the App →",
+    "audience": "21-40 New York nightlife goers, locals + visitors",
+    "highlights": [
+      {
+        "i": 1,
+        "t": "TONIGHT",
+        "concept": "What's open in NYC tonight"
+      },
+      {
+        "i": 2,
+        "t": "BEST OF",
+        "concept": "NYC's best venues"
+      },
+      {
+        "i": 3,
+        "t": "TABLES",
+        "concept": "Book a table"
+      },
+      {
+        "i": 4,
+        "t": "DATE NIGHT",
+        "concept": "Date-night-approved spots"
+      },
+      {
+        "i": 5,
+        "t": "GROUPS",
+        "concept": "Birthday / bachelorette"
+      },
+      {
+        "i": 6,
+        "t": "VISITORS",
+        "concept": "Visiting NYC? Start here."
+      },
+      {
+        "i": 7,
+        "t": "EVENTS",
+        "concept": "Concerts + parties"
+      },
+      {
+        "i": 8,
+        "t": "GET APP",
+        "concept": "Download links"
+      },
+      {
+        "i": 9,
+        "t": "ADD VENUE",
+        "concept": "Operators: list your spot"
+      },
+      {
+        "i": 10,
+        "t": "FAQ",
+        "concept": "Common questions"
+      }
+    ],
+    "pillar_mix": [
+      [
+        "Tonight Spotlights",
+        35
+      ],
+      [
+        "NYC Venues",
+        25
+      ],
+      [
+        "Local Culture",
+        20
+      ],
+      [
+        "UGC",
+        10
+      ],
+      [
+        "App Updates",
+        10
+      ]
+    ],
+    "intents": [
+      {
+        "name": "TONIGHT — what's open",
+        "keywords": [
+          "tonight",
+          "right now",
+          "this weekend",
+          "saturday",
+          "friday",
+          "sunday",
+          "what's open",
+          "what's poppin"
+        ],
+        "pool": null,
+        "link_path": "tonight",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "BOOK TABLE",
+        "keywords": [
+          "table",
+          "reservation",
+          "reserve",
+          "section",
+          "bottle",
+          "vip"
+        ],
+        "pool": "ops",
+        "link_path": "tables",
+        "stage": 1,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "BIRTHDAY / GROUP",
+        "keywords": [
+          "birthday",
+          "bachelor",
+          "bachelorette",
+          "group",
+          "party of",
+          "large group"
+        ],
+        "pool": "ops",
+        "link_path": "tables",
+        "stage": 1,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "DATE NIGHT",
+        "keywords": [
+          "date night",
+          "first date",
+          "romantic",
+          "intimate",
+          "dinner spot"
+        ],
+        "pool": null,
+        "link_path": "date-night",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "VISITING",
+        "keywords": [
+          "visiting new york",
+          "in town",
+          "tourist",
+          "first time",
+          "just landed"
+        ],
+        "pool": null,
+        "link_path": "visitors",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "GET APP",
+        "keywords": [
+          "download",
+          "get the app",
+          "app store",
+          "play store",
+          "ios",
+          "android"
+        ],
+        "pool": null,
+        "link_path": "download",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "ADD MY VENUE",
+        "keywords": [
+          "add my venue",
+          "my bar",
+          "my restaurant",
+          "my club",
+          "operator",
+          "partner"
+        ],
+        "pool": "ops",
+        "link_path": "partners",
+        "stage": 2,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "MUSIC / DJ NIGHT",
+        "keywords": [
+          "dj",
+          "live music",
+          "band",
+          "concert",
+          "r&b",
+          "hip hop",
+          "afro",
+          "reggae",
+          "techno"
+        ],
+        "pool": null,
+        "link_path": "music",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "FOOD QUESTION",
+        "keywords": [
+          "restaurant",
+          "brunch",
+          "dinner",
+          "late night food",
+          "best food"
+        ],
+        "pool": null,
+        "link_path": "food",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "AMBASSADOR / LOCAL",
+        "keywords": [
+          "ambassador",
+          "local",
+          "creator",
+          "represent",
+          "insider"
+        ],
+        "pool": "ops",
+        "link_path": "creators",
+        "stage": 2,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "BRAND PARTNERSHIP",
+        "keywords": [
+          "sponsor",
+          "brand deal",
+          "activation",
+          "partnership",
+          "collab"
+        ],
+        "pool": "ops",
+        "link_path": "brand-partners",
+        "stage": 3,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "GENERIC FIRST DM",
+        "keywords": [],
+        "trigger": "first_dm",
+        "pool": null,
+        "link_path": null,
+        "stage": null,
+        "action": "reply_only"
+      }
+    ],
+    "pinned": [
+      {
+        "slot": 1,
+        "concept": "Why NYC loves Good Times"
+      },
+      {
+        "slot": 2,
+        "concept": "Top 5 venues in NYC this month"
+      },
+      {
+        "slot": 3,
+        "concept": "How to book a table in 30 seconds"
+      }
+    ]
+  },
+  "gt_phoenix": {
+    "brand_key": "gt_phoenix",
+    "brand_name": "Good Times PHX",
+    "short_name": "Good Times PHX",
+    "division": "good_times_cities",
+    "ig_handle": "goodtimes.phx",
+    "website": "https://thegoodtimesworldwide.com/phx",
+    "primary_color": "#EA580C",
+    "accent_color": "#FBBF24",
+    "dark_color": "#08090E",
+    "category": "Local Nightlife Guide",
+    "contact_email": "phx@thegoodtimesworldwide.com",
+    "voice": "Builder energy. Clear, direct, ships fast, replies faster.",
+    "tagline": "Phoenix nightlife — curated nightly.",
+    "bio_text": "🌵 GOOD TIMES PHX\nPhoenix's nightlife concierge.\nTonight's hot spots · table reservations · what's worth your weekend.\n🔗 Get the app.",
+    "link_in_bio_label": "Download the App →",
+    "audience": "21-40 Phoenix nightlife goers, locals + visitors",
+    "highlights": [
+      {
+        "i": 1,
+        "t": "TONIGHT",
+        "concept": "What's open in PHX tonight"
+      },
+      {
+        "i": 2,
+        "t": "BEST OF",
+        "concept": "PHX's best venues"
+      },
+      {
+        "i": 3,
+        "t": "TABLES",
+        "concept": "Book a table"
+      },
+      {
+        "i": 4,
+        "t": "DATE NIGHT",
+        "concept": "Date-night-approved spots"
+      },
+      {
+        "i": 5,
+        "t": "GROUPS",
+        "concept": "Birthday / bachelorette"
+      },
+      {
+        "i": 6,
+        "t": "VISITORS",
+        "concept": "Visiting PHX? Start here."
+      },
+      {
+        "i": 7,
+        "t": "EVENTS",
+        "concept": "Concerts + parties"
+      },
+      {
+        "i": 8,
+        "t": "GET APP",
+        "concept": "Download links"
+      },
+      {
+        "i": 9,
+        "t": "ADD VENUE",
+        "concept": "Operators: list your spot"
+      },
+      {
+        "i": 10,
+        "t": "FAQ",
+        "concept": "Common questions"
+      }
+    ],
+    "pillar_mix": [
+      [
+        "Tonight Spotlights",
+        35
+      ],
+      [
+        "PHX Venues",
+        25
+      ],
+      [
+        "Local Culture",
+        20
+      ],
+      [
+        "UGC",
+        10
+      ],
+      [
+        "App Updates",
+        10
+      ]
+    ],
+    "intents": [
+      {
+        "name": "TONIGHT — what's open",
+        "keywords": [
+          "tonight",
+          "right now",
+          "this weekend",
+          "saturday",
+          "friday",
+          "sunday",
+          "what's open",
+          "what's poppin"
+        ],
+        "pool": null,
+        "link_path": "tonight",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "BOOK TABLE",
+        "keywords": [
+          "table",
+          "reservation",
+          "reserve",
+          "section",
+          "bottle",
+          "vip"
+        ],
+        "pool": "ops",
+        "link_path": "tables",
+        "stage": 1,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "BIRTHDAY / GROUP",
+        "keywords": [
+          "birthday",
+          "bachelor",
+          "bachelorette",
+          "group",
+          "party of",
+          "large group"
+        ],
+        "pool": "ops",
+        "link_path": "tables",
+        "stage": 1,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "DATE NIGHT",
+        "keywords": [
+          "date night",
+          "first date",
+          "romantic",
+          "intimate",
+          "dinner spot"
+        ],
+        "pool": null,
+        "link_path": "date-night",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "VISITING",
+        "keywords": [
+          "visiting phoenix",
+          "in town",
+          "tourist",
+          "first time",
+          "just landed"
+        ],
+        "pool": null,
+        "link_path": "visitors",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "GET APP",
+        "keywords": [
+          "download",
+          "get the app",
+          "app store",
+          "play store",
+          "ios",
+          "android"
+        ],
+        "pool": null,
+        "link_path": "download",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "ADD MY VENUE",
+        "keywords": [
+          "add my venue",
+          "my bar",
+          "my restaurant",
+          "my club",
+          "operator",
+          "partner"
+        ],
+        "pool": "ops",
+        "link_path": "partners",
+        "stage": 2,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "MUSIC / DJ NIGHT",
+        "keywords": [
+          "dj",
+          "live music",
+          "band",
+          "concert",
+          "r&b",
+          "hip hop",
+          "afro",
+          "reggae",
+          "techno"
+        ],
+        "pool": null,
+        "link_path": "music",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "FOOD QUESTION",
+        "keywords": [
+          "restaurant",
+          "brunch",
+          "dinner",
+          "late night food",
+          "best food"
+        ],
+        "pool": null,
+        "link_path": "food",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "AMBASSADOR / LOCAL",
+        "keywords": [
+          "ambassador",
+          "local",
+          "creator",
+          "represent",
+          "insider"
+        ],
+        "pool": "ops",
+        "link_path": "creators",
+        "stage": 2,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "BRAND PARTNERSHIP",
+        "keywords": [
+          "sponsor",
+          "brand deal",
+          "activation",
+          "partnership",
+          "collab"
+        ],
+        "pool": "ops",
+        "link_path": "brand-partners",
+        "stage": 3,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "GENERIC FIRST DM",
+        "keywords": [],
+        "trigger": "first_dm",
+        "pool": null,
+        "link_path": null,
+        "stage": null,
+        "action": "reply_only"
+      }
+    ],
+    "pinned": [
+      {
+        "slot": 1,
+        "concept": "Why PHX loves Good Times"
+      },
+      {
+        "slot": 2,
+        "concept": "Top 5 venues in PHX this month"
+      },
+      {
+        "slot": 3,
+        "concept": "How to book a table in 30 seconds"
+      }
+    ]
+  },
+  "gt_scottsdale": {
+    "brand_key": "gt_scottsdale",
+    "brand_name": "Good Times SCT",
+    "short_name": "Good Times SCT",
+    "division": "good_times_cities",
+    "ig_handle": "goodtimes.scottsdale",
+    "website": "https://thegoodtimesworldwide.com/sct",
+    "primary_color": "#DB2777",
+    "accent_color": "#FBBF24",
+    "dark_color": "#08090E",
+    "category": "Local Nightlife Guide",
+    "contact_email": "sct@thegoodtimesworldwide.com",
+    "voice": "Builder energy. Clear, direct, ships fast, replies faster.",
+    "tagline": "Scottsdale nightlife — curated nightly.",
+    "bio_text": "🏜 GOOD TIMES SCT\nScottsdale's nightlife concierge.\nTonight's hot spots · table reservations · what's worth your weekend.\n🔗 Get the app.",
+    "link_in_bio_label": "Download the App →",
+    "audience": "21-40 Scottsdale nightlife goers, locals + visitors",
+    "highlights": [
+      {
+        "i": 1,
+        "t": "TONIGHT",
+        "concept": "What's open in SCT tonight"
+      },
+      {
+        "i": 2,
+        "t": "BEST OF",
+        "concept": "SCT's best venues"
+      },
+      {
+        "i": 3,
+        "t": "TABLES",
+        "concept": "Book a table"
+      },
+      {
+        "i": 4,
+        "t": "DATE NIGHT",
+        "concept": "Date-night-approved spots"
+      },
+      {
+        "i": 5,
+        "t": "GROUPS",
+        "concept": "Birthday / bachelorette"
+      },
+      {
+        "i": 6,
+        "t": "VISITORS",
+        "concept": "Visiting SCT? Start here."
+      },
+      {
+        "i": 7,
+        "t": "EVENTS",
+        "concept": "Concerts + parties"
+      },
+      {
+        "i": 8,
+        "t": "GET APP",
+        "concept": "Download links"
+      },
+      {
+        "i": 9,
+        "t": "ADD VENUE",
+        "concept": "Operators: list your spot"
+      },
+      {
+        "i": 10,
+        "t": "FAQ",
+        "concept": "Common questions"
+      }
+    ],
+    "pillar_mix": [
+      [
+        "Tonight Spotlights",
+        35
+      ],
+      [
+        "SCT Venues",
+        25
+      ],
+      [
+        "Local Culture",
+        20
+      ],
+      [
+        "UGC",
+        10
+      ],
+      [
+        "App Updates",
+        10
+      ]
+    ],
+    "intents": [
+      {
+        "name": "TONIGHT — what's open",
+        "keywords": [
+          "tonight",
+          "right now",
+          "this weekend",
+          "saturday",
+          "friday",
+          "sunday",
+          "what's open",
+          "what's poppin"
+        ],
+        "pool": null,
+        "link_path": "tonight",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "BOOK TABLE",
+        "keywords": [
+          "table",
+          "reservation",
+          "reserve",
+          "section",
+          "bottle",
+          "vip"
+        ],
+        "pool": "ops",
+        "link_path": "tables",
+        "stage": 1,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "BIRTHDAY / GROUP",
+        "keywords": [
+          "birthday",
+          "bachelor",
+          "bachelorette",
+          "group",
+          "party of",
+          "large group"
+        ],
+        "pool": "ops",
+        "link_path": "tables",
+        "stage": 1,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "DATE NIGHT",
+        "keywords": [
+          "date night",
+          "first date",
+          "romantic",
+          "intimate",
+          "dinner spot"
+        ],
+        "pool": null,
+        "link_path": "date-night",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "VISITING",
+        "keywords": [
+          "visiting scottsdale",
+          "in town",
+          "tourist",
+          "first time",
+          "just landed"
+        ],
+        "pool": null,
+        "link_path": "visitors",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "GET APP",
+        "keywords": [
+          "download",
+          "get the app",
+          "app store",
+          "play store",
+          "ios",
+          "android"
+        ],
+        "pool": null,
+        "link_path": "download",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "ADD MY VENUE",
+        "keywords": [
+          "add my venue",
+          "my bar",
+          "my restaurant",
+          "my club",
+          "operator",
+          "partner"
+        ],
+        "pool": "ops",
+        "link_path": "partners",
+        "stage": 2,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "MUSIC / DJ NIGHT",
+        "keywords": [
+          "dj",
+          "live music",
+          "band",
+          "concert",
+          "r&b",
+          "hip hop",
+          "afro",
+          "reggae",
+          "techno"
+        ],
+        "pool": null,
+        "link_path": "music",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "FOOD QUESTION",
+        "keywords": [
+          "restaurant",
+          "brunch",
+          "dinner",
+          "late night food",
+          "best food"
+        ],
+        "pool": null,
+        "link_path": "food",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "AMBASSADOR / LOCAL",
+        "keywords": [
+          "ambassador",
+          "local",
+          "creator",
+          "represent",
+          "insider"
+        ],
+        "pool": "ops",
+        "link_path": "creators",
+        "stage": 2,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "BRAND PARTNERSHIP",
+        "keywords": [
+          "sponsor",
+          "brand deal",
+          "activation",
+          "partnership",
+          "collab"
+        ],
+        "pool": "ops",
+        "link_path": "brand-partners",
+        "stage": 3,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "GENERIC FIRST DM",
+        "keywords": [],
+        "trigger": "first_dm",
+        "pool": null,
+        "link_path": null,
+        "stage": null,
+        "action": "reply_only"
+      }
+    ],
+    "pinned": [
+      {
+        "slot": 1,
+        "concept": "Why SCT loves Good Times"
+      },
+      {
+        "slot": 2,
+        "concept": "Top 5 venues in SCT this month"
+      },
+      {
+        "slot": 3,
+        "concept": "How to book a table in 30 seconds"
+      }
+    ]
+  },
+  "casper_group": {
+    "brand_key": "casper_group",
+    "brand_name": "The Casper Group",
+    "short_name": "Casper",
+    "division": "fnb",
+    "ig_handle": "thecaspergroupworldwide",
+    "website": "https://caspergroupworldwide.com",
+    "primary_color": "#F97316",
+    "accent_color": "#1E40AF",
+    "dark_color": "#08090E",
+    "category": "F&B / Ghost Kitchen",
+    "contact_email": "hi@caspergroupworldwide.com",
+    "voice": "Concierge polish meets after-party energy. Always pulling the next person forward.",
+    "tagline": "10 ghost kitchen concepts. One Atlanta operation.",
+    "bio_text": "👻 THE CASPER GROUP\n10 ghost-kitchen concepts · Atlanta · delivery only\nFrom American Dragon to Patty Daddy → all from one ATL kitchen.\n🔗 Order any concept.",
+    "link_in_bio_label": "Order Now →",
+    "audience": "Atlanta delivery customers, food bloggers, ghost-kitchen operators, F&B investors",
+    "highlights": [
+      {
+        "i": 1,
+        "t": "MENU",
+        "concept": "All 10 concepts"
+      },
+      {
+        "i": 2,
+        "t": "ORDER",
+        "concept": "Where to order"
+      },
+      {
+        "i": 3,
+        "t": "DRAGON",
+        "concept": "American Dragon"
+      },
+      {
+        "i": 4,
+        "t": "PATTY",
+        "concept": "Patty Daddy"
+      },
+      {
+        "i": 5,
+        "t": "TACO",
+        "concept": "Taco Yaki"
+      },
+      {
+        "i": 6,
+        "t": "PIZZA",
+        "concept": "Peace Pizza"
+      },
+      {
+        "i": 7,
+        "t": "BEHIND",
+        "concept": "Inside the kitchen"
+      },
+      {
+        "i": 8,
+        "t": "FRANCHISE",
+        "concept": "License a concept"
+      },
+      {
+        "i": 9,
+        "t": "PRESS",
+        "concept": "Press + features"
+      },
+      {
+        "i": 10,
+        "t": "FAQ",
+        "concept": "Common questions"
+      }
+    ],
+    "pillar_mix": [
+      [
+        "Menu Items / Cravings",
+        35
+      ],
+      [
+        "Concept Spotlights",
+        25
+      ],
+      [
+        "Customer UGC",
+        15
+      ],
+      [
+        "BTS Kitchen",
+        15
+      ],
+      [
+        "Atlanta Food Culture",
+        10
+      ]
+    ],
+    "intents": [
+      {
+        "name": "ORDER — where",
+        "keywords": [
+          "how do i order",
+          "where to order",
+          "order online",
+          "delivery",
+          "ubereats",
+          "doordash",
+          "grubhub"
+        ],
+        "pool": null,
+        "link_path": "order",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "MENU",
+        "keywords": [
+          "menu",
+          "what do you have",
+          "options",
+          "sell",
+          "specials",
+          "wings",
+          "burger",
+          "pizza"
+        ],
+        "pool": null,
+        "link_path": "menu",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "DELIVERY AREA",
+        "keywords": [
+          "deliver to",
+          "do you deliver",
+          "my zip",
+          "my address",
+          "far",
+          "outside atlanta"
+        ],
+        "pool": null,
+        "link_path": "delivery",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "ORDER ISSUE",
+        "keywords": [
+          "my order",
+          "wrong",
+          "missing",
+          "late",
+          "cold",
+          "didn't get",
+          "refund"
+        ],
+        "pool": "ops",
+        "link_path": "support",
+        "stage": null,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "FRANCHISE / LICENSE",
+        "keywords": [
+          "franchise",
+          "license",
+          "open in",
+          "my city",
+          "start one"
+        ],
+        "pool": "ops",
+        "link_path": "franchise",
+        "stage": 3,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "CATERING / GROUP",
+        "keywords": [
+          "catering",
+          "cater",
+          "corporate",
+          "large order",
+          "party",
+          "event food"
+        ],
+        "pool": "ops",
+        "link_path": "catering",
+        "stage": 1,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "WHOLESALE / VENDOR",
+        "keywords": [
+          "supply",
+          "wholesale",
+          "supplier",
+          "vendor",
+          "my product"
+        ],
+        "pool": "ops",
+        "link_path": "vendors",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "JOB / HIRING",
+        "keywords": [
+          "hiring",
+          "job",
+          "work for",
+          "cook",
+          "kitchen job",
+          "apply"
+        ],
+        "pool": "ops",
+        "link_path": "careers",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "PRESS / FEATURE",
+        "keywords": [
+          "press",
+          "journalist",
+          "blog",
+          "podcast",
+          "feature",
+          "review"
+        ],
+        "pool": "ops",
+        "link_path": "press",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "INVESTOR / GHOST KITCHEN",
+        "keywords": [
+          "invest",
+          "ghost kitchen",
+          "virtual brand",
+          "cloud kitchen",
+          "operator"
+        ],
+        "pool": "dolo_personal",
+        "link_path": "invest",
+        "stage": 5,
+        "action": "reply_and_handoff"
+      },
+      {
+        "name": "ALLERGEN / DIETARY",
+        "keywords": [
+          "allergy",
+          "gluten",
+          "vegan",
+          "vegetarian",
+          "halal",
+          "dairy free"
+        ],
+        "pool": null,
+        "link_path": "menu",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "GENERIC FIRST DM",
+        "keywords": [],
+        "trigger": "first_dm",
+        "pool": null,
+        "link_path": null,
+        "stage": null,
+        "action": "reply_only"
+      }
+    ],
+    "pinned": [
+      {
+        "slot": 1,
+        "concept": "10 concepts, one kitchen — the Casper model"
+      },
+      {
+        "slot": 2,
+        "concept": "Best-selling menu items across all 10 concepts"
+      },
+      {
+        "slot": 3,
+        "concept": "How to order on any platform"
+      }
+    ]
+  },
+  "forever_futbol": {
+    "brand_key": "forever_futbol",
+    "brand_name": "Forever Futbol Museum",
+    "short_name": "Forever Futbol",
+    "division": "museums",
+    "ig_handle": "foreverfutbol.museum",
+    "website": "https://foreverfutbolmuseum.com",
+    "primary_color": "#15803D",
+    "accent_color": "#FBBF24",
+    "dark_color": "#08090E",
+    "category": "Museum / Culture",
+    "contact_email": "hello@foreverfutbolmuseum.com",
+    "voice": "Storyteller poetry. Treats culture as architecture — every word load-bearing.",
+    "tagline": "An Atlanta museum for the world's game.",
+    "bio_text": "⚽ FOREVER FUTBOL · Atlanta\nA museum for the world's game.\nMay 29 – Jul 6 · Fri/Sat/Sun · Noon–9PM\n🔗 Tickets ↓",
+    "link_in_bio_label": "Get Tickets →",
+    "audience": "soccer fans, museum-goers, families, World Cup tourists, Atlanta culture",
+    "highlights": [
+      {
+        "i": 1,
+        "t": "TICKETS",
+        "concept": "Buy tickets / hours"
+      },
+      {
+        "i": 2,
+        "t": "EXHIBITS",
+        "concept": "What's inside"
+      },
+      {
+        "i": 3,
+        "t": "WORLD CUP",
+        "concept": "WC programming"
+      },
+      {
+        "i": 4,
+        "t": "GROUPS",
+        "concept": "Schools + corporate"
+      },
+      {
+        "i": 5,
+        "t": "MERCH",
+        "concept": "Museum store"
+      },
+      {
+        "i": 6,
+        "t": "EVENTS",
+        "concept": "Special events"
+      },
+      {
+        "i": 7,
+        "t": "STORIES",
+        "concept": "Iconic moments"
+      },
+      {
+        "i": 8,
+        "t": "PRESS",
+        "concept": "Press + reviews"
+      },
+      {
+        "i": 9,
+        "t": "DONATE",
+        "concept": "Support the museum"
+      },
+      {
+        "i": 10,
+        "t": "FAQ",
+        "concept": "Visiting tips"
+      }
+    ],
+    "pillar_mix": [
+      [
+        "Exhibit Highlights",
+        30
+      ],
+      [
+        "Iconic Moments",
+        25
+      ],
+      [
+        "Visitor Experience",
+        20
+      ],
+      [
+        "World Cup Programming",
+        15
+      ],
+      [
+        "Behind The Scenes",
+        10
+      ]
+    ],
+    "intents": [
+      {
+        "name": "TICKETS",
+        "keywords": [
+          "ticket",
+          "buy ticket",
+          "admission",
+          "cost",
+          "price",
+          "how much"
+        ],
+        "pool": null,
+        "link_path": "tickets",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "HOURS / WHEN OPEN",
+        "keywords": [
+          "hours",
+          "when open",
+          "open today",
+          "what time",
+          "weekend",
+          "monday",
+          "tuesday",
+          "wednesday",
+          "thursday"
+        ],
+        "pool": null,
+        "link_path": "visit",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "ADDRESS / DIRECTIONS",
+        "keywords": [
+          "where",
+          "address",
+          "directions",
+          "location",
+          "parking",
+          "public transit"
+        ],
+        "pool": null,
+        "link_path": "visit",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "GROUP / SCHOOL",
+        "keywords": [
+          "group",
+          "school",
+          "field trip",
+          "class",
+          "tour group",
+          "large group",
+          "party of"
+        ],
+        "pool": "ops",
+        "link_path": "groups",
+        "stage": 1,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "BIRTHDAY / EVENT",
+        "keywords": [
+          "birthday",
+          "party",
+          "host event",
+          "corporate",
+          "private event",
+          "rent"
+        ],
+        "pool": "ops",
+        "link_path": "events",
+        "stage": 1,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "WORLD CUP",
+        "keywords": [
+          "world cup",
+          "wc",
+          "2026",
+          "fifa",
+          "tournament",
+          "host city",
+          "world cup atlanta"
+        ],
+        "pool": null,
+        "link_path": "worldcup",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "MERCH / STORE",
+        "keywords": [
+          "merch",
+          "jersey",
+          "shirt",
+          "store",
+          "ship",
+          "buy a",
+          "gift shop"
+        ],
+        "pool": null,
+        "link_path": "store",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "PRESS / MEDIA",
+        "keywords": [
+          "press",
+          "journalist",
+          "review",
+          "feature",
+          "podcast",
+          "media pass"
+        ],
+        "pool": "ops",
+        "link_path": "press",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "DONATE / SUPPORT",
+        "keywords": [
+          "donate",
+          "support",
+          "sponsor",
+          "patron",
+          "fund"
+        ],
+        "pool": "ops",
+        "link_path": "donate",
+        "stage": 5,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "ARTIFACT / COLLECTOR",
+        "keywords": [
+          "my jersey",
+          "my collection",
+          "artifact",
+          "loan",
+          "exhibit my",
+          "collector"
+        ],
+        "pool": "ops",
+        "link_path": "submissions",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "ACCESSIBILITY",
+        "keywords": [
+          "wheelchair",
+          "accessible",
+          "stroller",
+          "autism",
+          "sensory",
+          "quiet"
+        ],
+        "pool": null,
+        "link_path": "accessibility",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "GENERIC FIRST DM",
+        "keywords": [],
+        "trigger": "first_dm",
+        "pool": null,
+        "link_path": null,
+        "stage": null,
+        "action": "reply_only"
+      }
+    ],
+    "pinned": [
+      {
+        "slot": 1,
+        "concept": "Welcome — what Forever Futbol is"
+      },
+      {
+        "slot": 2,
+        "concept": "What's inside — exhibit walkthrough"
+      },
+      {
+        "slot": 3,
+        "concept": "Plan your visit — hours, tickets, parking"
+      }
+    ]
+  },
+  "infinity_water": {
+    "brand_key": "infinity_water",
+    "brand_name": "Infinity Water",
+    "short_name": "Infinity Water",
+    "division": "products",
+    "ig_handle": "theinfinitywater",
+    "website": "https://infinitywaterco.com",
+    "primary_color": "#0EA5E9",
+    "accent_color": "#FBBF24",
+    "dark_color": "#08090E",
+    "category": "Beverage / CPG",
+    "contact_email": "hi@infinitywaterco.com",
+    "voice": "Crisp + scientific + a little fun. Lets the product do the talking but flexes the science.",
+    "tagline": "Premium pH-balanced water. Engineered for athletes.",
+    "bio_text": "💧 INFINITY WATER\n9.5+ pH · alkaline · electrolytes · zero sugar\nEngineered for athletes, optimized for everyone.\n🔗 Shop · Wholesale.",
+    "link_in_bio_label": "Shop Infinity →",
+    "audience": "athletes, fitness enthusiasts, wellness consumers, retailers, sports teams",
+    "highlights": [
+      {
+        "i": 1,
+        "t": "BUY",
+        "concept": "Where to buy"
+      },
+      {
+        "i": 2,
+        "t": "THE SCIENCE",
+        "concept": "Why pH matters"
+      },
+      {
+        "i": 3,
+        "t": "ATHLETES",
+        "concept": "Brand ambassadors"
+      },
+      {
+        "i": 4,
+        "t": "WHOLESALE",
+        "concept": "Stock Infinity"
+      },
+      {
+        "i": 5,
+        "t": "RETAILERS",
+        "concept": "Find a store"
+      },
+      {
+        "i": 6,
+        "t": "EVENTS",
+        "concept": "Pop-ups + sponsorships"
+      },
+      {
+        "i": 7,
+        "t": "FAQ",
+        "concept": "Common questions"
+      },
+      {
+        "i": 8,
+        "t": "PRESS",
+        "concept": "Press + features"
+      },
+      {
+        "i": 9,
+        "t": "AMBASSADOR",
+        "concept": "Be a rep"
+      },
+      {
+        "i": 10,
+        "t": "PARTNER",
+        "concept": "Brand partnerships"
+      }
+    ],
+    "pillar_mix": [
+      [
+        "Product Education",
+        30
+      ],
+      [
+        "Athlete/Ambassador Spotlights",
+        25
+      ],
+      [
+        "Wholesale/Retail Wins",
+        15
+      ],
+      [
+        "Customer UGC",
+        15
+      ],
+      [
+        "Founder/BTS",
+        15
+      ]
+    ],
+    "intents": [
+      {
+        "name": "WHERE TO BUY",
+        "keywords": [
+          "where to buy",
+          "find a store",
+          "stock",
+          "sell",
+          "carry",
+          "near me",
+          "retailer"
+        ],
+        "pool": null,
+        "link_path": "find",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "WHOLESALE / RETAILER",
+        "keywords": [
+          "wholesale",
+          "stock in my store",
+          "carry your",
+          "retailer",
+          "case",
+          "palette",
+          "bulk"
+        ],
+        "pool": "ops",
+        "link_path": "wholesale",
+        "stage": 3,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "GYM / TEAM ORDER",
+        "keywords": [
+          "gym",
+          "team",
+          "studio",
+          "crossfit",
+          "fitness",
+          "spin",
+          "yoga",
+          "stock our"
+        ],
+        "pool": "ops",
+        "link_path": "gym-team",
+        "stage": 1,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "ONLINE ORDER",
+        "keywords": [
+          "order online",
+          "ship to",
+          "website",
+          "online",
+          "delivery",
+          "amazon"
+        ],
+        "pool": null,
+        "link_path": "shop",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "AMBASSADOR / ATHLETE",
+        "keywords": [
+          "ambassador",
+          "athlete",
+          "sponsor me",
+          "team",
+          "represent",
+          "creator"
+        ],
+        "pool": "ops",
+        "link_path": "ambassador",
+        "stage": 2,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "EVENT SPONSORSHIP",
+        "keywords": [
+          "sponsor",
+          "event sponsor",
+          "activation",
+          "race",
+          "tournament",
+          "game day"
+        ],
+        "pool": "ops",
+        "link_path": "sponsorship",
+        "stage": 3,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "PRODUCT QUESTION — pH",
+        "keywords": [
+          "ph",
+          "alkaline",
+          "electrolyte",
+          "minerals",
+          "bicarbonate",
+          "tds",
+          "ingredients"
+        ],
+        "pool": null,
+        "link_path": "science",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "PRESS / FEATURE",
+        "keywords": [
+          "press",
+          "journalist",
+          "feature",
+          "review",
+          "podcast"
+        ],
+        "pool": "ops",
+        "link_path": "press",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "CUSTOM / PRIVATE LABEL",
+        "keywords": [
+          "private label",
+          "custom",
+          "my brand",
+          "white label",
+          "oem"
+        ],
+        "pool": "ops",
+        "link_path": "private-label",
+        "stage": 3,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "INVESTOR",
+        "keywords": [
+          "invest",
+          "investor",
+          "capital",
+          "funding",
+          "raise"
+        ],
+        "pool": "dolo_personal",
+        "link_path": "invest",
+        "stage": 5,
+        "action": "reply_and_handoff"
+      },
+      {
+        "name": "SHIPPING QUESTION",
+        "keywords": [
+          "shipping",
+          "how long",
+          "tracking",
+          "international",
+          "ship to"
+        ],
+        "pool": null,
+        "link_path": "shipping",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "GENERIC FIRST DM",
+        "keywords": [],
+        "trigger": "first_dm",
+        "pool": null,
+        "link_path": null,
+        "stage": null,
+        "action": "reply_only"
+      }
+    ],
+    "pinned": [
+      {
+        "slot": 1,
+        "concept": "What makes Infinity different — pH science"
+      },
+      {
+        "slot": 2,
+        "concept": "Where to buy / find a retailer"
+      },
+      {
+        "slot": 3,
+        "concept": "Athlete spotlight reel"
+      }
+    ]
+  },
+  "pronto_energy": {
+    "brand_key": "pronto_energy",
+    "brand_name": "Pronto Energy",
+    "short_name": "Pronto",
+    "division": "products",
+    "ig_handle": "theprontoenergy",
+    "website": "https://prontoenergydrink.com",
+    "primary_color": "#EAB308",
+    "accent_color": "#DC2626",
+    "dark_color": "#08090E",
+    "category": "Beverage / CPG",
+    "contact_email": "hi@prontoenergydrink.com",
+    "voice": "Crisp + scientific + a little fun. Lets the product do the talking but flexes the science.",
+    "tagline": "Clean energy for the people who never stop.",
+    "bio_text": "⚡ PRONTO ENERGY\nClean caffeine · zero sugar · vitamins · made for hustlers.\nFor the operators, creators, and parents who never stop.\n🔗 Shop · Wholesale.",
+    "link_in_bio_label": "Shop Pronto →",
+    "audience": "creators, operators, founders, students, gym-goers, gamers, retailers",
+    "highlights": [
+      {
+        "i": 1,
+        "t": "BUY",
+        "concept": "Where to buy"
+      },
+      {
+        "i": 2,
+        "t": "INGREDIENTS",
+        "concept": "What's inside"
+      },
+      {
+        "i": 3,
+        "t": "FLAVORS",
+        "concept": "Available flavors"
+      },
+      {
+        "i": 4,
+        "t": "WHOLESALE",
+        "concept": "Stock Pronto"
+      },
+      {
+        "i": 5,
+        "t": "GAMERS",
+        "concept": "Gaming creators"
+      },
+      {
+        "i": 6,
+        "t": "AMBASSADOR",
+        "concept": "Be a rep"
+      },
+      {
+        "i": 7,
+        "t": "EVENTS",
+        "concept": "Pop-ups + sponsorships"
+      },
+      {
+        "i": 8,
+        "t": "PRESS",
+        "concept": "Press + features"
+      },
+      {
+        "i": 9,
+        "t": "SUBSCRIBE",
+        "concept": "Subscribe + save"
+      },
+      {
+        "i": 10,
+        "t": "FAQ",
+        "concept": "Common questions"
+      }
+    ],
+    "pillar_mix": [
+      [
+        "Product Drops/Flavors",
+        30
+      ],
+      [
+        "Customer UGC / Hustlers",
+        25
+      ],
+      [
+        "Ingredient Education",
+        15
+      ],
+      [
+        "Founder Energy",
+        15
+      ],
+      [
+        "Retail/Wholesale Wins",
+        15
+      ]
+    ],
+    "intents": [
+      {
+        "name": "WHERE TO BUY",
+        "keywords": [
+          "where to buy",
+          "find",
+          "stock",
+          "sell",
+          "near me",
+          "retailer",
+          "store locator"
+        ],
+        "pool": null,
+        "link_path": "find",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "WHOLESALE / RETAILER",
+        "keywords": [
+          "wholesale",
+          "stock my",
+          "retailer",
+          "gas station",
+          "convenience",
+          "case",
+          "palette"
+        ],
+        "pool": "ops",
+        "link_path": "wholesale",
+        "stage": 3,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "FLAVORS",
+        "keywords": [
+          "flavor",
+          "what flavors",
+          "tropical",
+          "berry",
+          "watermelon",
+          "mango",
+          "new flavor"
+        ],
+        "pool": null,
+        "link_path": "flavors",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "INGREDIENT / CAFFEINE",
+        "keywords": [
+          "caffeine",
+          "mg",
+          "sugar",
+          "sucralose",
+          "b vitamins",
+          "ingredients",
+          "what's in"
+        ],
+        "pool": null,
+        "link_path": "ingredients",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "GAMER / CREATOR",
+        "keywords": [
+          "gamer",
+          "gaming",
+          "stream",
+          "twitch",
+          "youtube",
+          "creator",
+          "content"
+        ],
+        "pool": "ops",
+        "link_path": "creators",
+        "stage": 2,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "AMBASSADOR",
+        "keywords": [
+          "ambassador",
+          "sponsor me",
+          "represent",
+          "affiliate",
+          "rep"
+        ],
+        "pool": "ops",
+        "link_path": "ambassador",
+        "stage": 2,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "EVENT SPONSORSHIP",
+        "keywords": [
+          "sponsor",
+          "event",
+          "activation",
+          "tournament",
+          "race",
+          "esports"
+        ],
+        "pool": "ops",
+        "link_path": "sponsorship",
+        "stage": 3,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "SUBSCRIBE / DEAL",
+        "keywords": [
+          "subscribe",
+          "subscription",
+          "discount",
+          "deal",
+          "sale",
+          "promo",
+          "coupon"
+        ],
+        "pool": null,
+        "link_path": "subscribe",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "PRESS / FEATURE",
+        "keywords": [
+          "press",
+          "journalist",
+          "review",
+          "feature",
+          "podcast"
+        ],
+        "pool": "ops",
+        "link_path": "press",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "INVESTOR",
+        "keywords": [
+          "invest",
+          "investor",
+          "funding",
+          "capital",
+          "raise"
+        ],
+        "pool": "dolo_personal",
+        "link_path": "invest",
+        "stage": 5,
+        "action": "reply_and_handoff"
+      },
+      {
+        "name": "CUSTOM / PRIVATE LABEL",
+        "keywords": [
+          "private label",
+          "white label",
+          "my brand",
+          "custom"
+        ],
+        "pool": "ops",
+        "link_path": "private-label",
+        "stage": 3,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "GENERIC FIRST DM",
+        "keywords": [],
+        "trigger": "first_dm",
+        "pool": null,
+        "link_path": null,
+        "stage": null,
+        "action": "reply_only"
+      }
+    ],
+    "pinned": [
+      {
+        "slot": 1,
+        "concept": "What's in Pronto — ingredient breakdown"
+      },
+      {
+        "slot": 2,
+        "concept": "Hustler spotlight reel — who drinks Pronto"
+      },
+      {
+        "slot": 3,
+        "concept": "Where to buy / subscribe"
+      }
+    ]
+  },
+  "reset_therapy": {
+    "brand_key": "reset_therapy",
+    "brand_name": "Reset Therapy",
+    "short_name": "Reset",
+    "division": "wellness",
+    "ig_handle": "resetmandatory",
+    "website": "https://reset-therapy.vercel.app",
+    "primary_color": "#0F766E",
+    "accent_color": "#FBBF24",
+    "dark_color": "#08090E",
+    "category": "Wellness / Therapy",
+    "contact_email": "hello@resetmandatory.com",
+    "voice": "Steady, calm, regulated. The tone of a long exhale.",
+    "tagline": "Reset is mandatory. Massage + bodywork in Atlanta.",
+    "bio_text": "🌿 RESET — therapy for the operators.\nMassage · bodywork · contrast therapy · breathwork\nAtlanta · by appointment · LMTs you'd send your mom to\n🔗 Book.",
+    "link_in_bio_label": "Book Now →",
+    "audience": "burned-out operators, athletes, founders, professionals, mental-health-aware",
+    "highlights": [
+      {
+        "i": 1,
+        "t": "BOOK",
+        "concept": "Booking link"
+      },
+      {
+        "i": 2,
+        "t": "SERVICES",
+        "concept": "All 18 services"
+      },
+      {
+        "i": 3,
+        "t": "PRACTITIONERS",
+        "concept": "Meet the LMTs"
+      },
+      {
+        "i": 4,
+        "t": "MEMBERSHIP",
+        "concept": "Membership perks"
+      },
+      {
+        "i": 5,
+        "t": "FAQ",
+        "concept": "What to expect"
+      },
+      {
+        "i": 6,
+        "t": "GIFT",
+        "concept": "Gift cards"
+      },
+      {
+        "i": 7,
+        "t": "CORPORATE",
+        "concept": "On-site corporate"
+      },
+      {
+        "i": 8,
+        "t": "STORIES",
+        "concept": "Client testimonials"
+      },
+      {
+        "i": 9,
+        "t": "PRESS",
+        "concept": "Press + features"
+      },
+      {
+        "i": 10,
+        "t": "JOIN US",
+        "concept": "LMTs: work with us"
+      }
+    ],
+    "pillar_mix": [
+      [
+        "Education — bodywork science",
+        30
+      ],
+      [
+        "Practitioner Spotlights",
+        20
+      ],
+      [
+        "Client Testimonials",
+        20
+      ],
+      [
+        "Studio BTS",
+        15
+      ],
+      [
+        "Founder/Lifestyle",
+        15
+      ]
+    ],
+    "intents": [
+      {
+        "name": "BOOK",
+        "keywords": [
+          "book",
+          "appointment",
+          "schedule",
+          "available",
+          "next opening",
+          "reserve"
+        ],
+        "pool": null,
+        "link_path": "book",
+        "stage": 1,
+        "action": "reply_only"
+      },
+      {
+        "name": "PRICING",
+        "keywords": [
+          "price",
+          "cost",
+          "how much",
+          "rate",
+          "fee",
+          "pricing"
+        ],
+        "pool": null,
+        "link_path": "services",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "SERVICES — what",
+        "keywords": [
+          "service",
+          "massage",
+          "bodywork",
+          "contrast",
+          "breathwork",
+          "stretch",
+          "types of",
+          "what kind of"
+        ],
+        "pool": null,
+        "link_path": "services",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "MEMBERSHIP",
+        "keywords": [
+          "membership",
+          "member",
+          "monthly",
+          "subscribe",
+          "unlimited"
+        ],
+        "pool": null,
+        "link_path": "membership",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "GIFT CARD",
+        "keywords": [
+          "gift card",
+          "gift",
+          "present",
+          "give a gift"
+        ],
+        "pool": null,
+        "link_path": "gift",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "CORPORATE / ON-SITE",
+        "keywords": [
+          "corporate",
+          "company",
+          "office",
+          "team",
+          "on-site",
+          "onsite",
+          "wellness day"
+        ],
+        "pool": "ops",
+        "link_path": "corporate",
+        "stage": 3,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "FIRST-TIMER",
+        "keywords": [
+          "first time",
+          "never had",
+          "what to expect",
+          "prepare",
+          "what to wear",
+          "nervous"
+        ],
+        "pool": null,
+        "link_path": "first-time",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "CANCEL / RESCHEDULE",
+        "keywords": [
+          "cancel",
+          "reschedule",
+          "move my",
+          "change appointment"
+        ],
+        "pool": "ops",
+        "link_path": "support",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "INJURY / PAIN",
+        "keywords": [
+          "pain",
+          "injury",
+          "hurt",
+          "sore",
+          "tight",
+          "knot",
+          "tension",
+          "headache",
+          "migraine"
+        ],
+        "pool": "ops",
+        "link_path": "services",
+        "stage": 2,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "LMT JOB",
+        "keywords": [
+          "lmt",
+          "massage therapist",
+          "work for",
+          "apply",
+          "therapist job"
+        ],
+        "pool": "ops",
+        "link_path": "careers",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "PRESS / FEATURE",
+        "keywords": [
+          "press",
+          "journalist",
+          "feature",
+          "review",
+          "wellness blog"
+        ],
+        "pool": "ops",
+        "link_path": "press",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "GENERIC FIRST DM",
+        "keywords": [],
+        "trigger": "first_dm",
+        "pool": null,
+        "link_path": null,
+        "stage": null,
+        "action": "reply_only"
+      }
+    ],
+    "pinned": [
+      {
+        "slot": 1,
+        "concept": "What Reset is — therapy for operators"
+      },
+      {
+        "slot": 2,
+        "concept": "Meet the practitioners"
+      },
+      {
+        "slot": 3,
+        "concept": "First-time guide — what to expect"
+      }
+    ]
+  },
+  "mind_studio": {
+    "brand_key": "mind_studio",
+    "brand_name": "The Mind Studio",
+    "short_name": "Mind Studio",
+    "division": "services",
+    "ig_handle": "themindstudioforever",
+    "website": "https://themindstudioworldwide.com",
+    "primary_color": "#7C3AED",
+    "accent_color": "#FBBF24",
+    "dark_color": "#08090E",
+    "category": "Creative Services",
+    "contact_email": "hello@themindstudioworldwide.com",
+    "voice": "Professional + protective. Explains the system + removes the friction.",
+    "tagline": "We design the systems that make brands feel inevitable.",
+    "bio_text": "🧠 THE MIND STUDIO\nWe design the systems that make brands feel inevitable.\nStrategy · identity · digital · campaigns · ATL → worldwide.\n🔗 Work with us.",
+    "link_in_bio_label": "Start a Project →",
+    "audience": "founders, brand managers, marketing leaders, established brands looking to refresh",
+    "highlights": [
+      {
+        "i": 1,
+        "t": "WORK",
+        "concept": "Recent projects"
+      },
+      {
+        "i": 2,
+        "t": "SERVICES",
+        "concept": "What we offer"
+      },
+      {
+        "i": 3,
+        "t": "PROCESS",
+        "concept": "How we work"
+      },
+      {
+        "i": 4,
+        "t": "TEAM",
+        "concept": "Meet the studio"
+      },
+      {
+        "i": 5,
+        "t": "CASE STUDIES",
+        "concept": "Deep dives"
+      },
+      {
+        "i": 6,
+        "t": "INQUIRE",
+        "concept": "Start a project"
+      },
+      {
+        "i": 7,
+        "t": "PRESS",
+        "concept": "Press + awards"
+      },
+      {
+        "i": 8,
+        "t": "TESTIMONIALS",
+        "concept": "Client quotes"
+      },
+      {
+        "i": 9,
+        "t": "CAREERS",
+        "concept": "Join us"
+      },
+      {
+        "i": 10,
+        "t": "STUDIO",
+        "concept": "Studio life"
+      }
+    ],
+    "pillar_mix": [
+      [
+        "Project Showcases",
+        35
+      ],
+      [
+        "Process / Education",
+        25
+      ],
+      [
+        "Team Spotlights",
+        15
+      ],
+      [
+        "Industry POV",
+        15
+      ],
+      [
+        "BTS",
+        10
+      ]
+    ],
+    "intents": [
+      {
+        "name": "PROJECT INQUIRY",
+        "keywords": [
+          "project",
+          "work with",
+          "help me",
+          "redesign",
+          "rebrand",
+          "new brand",
+          "launch a brand"
+        ],
+        "pool": "ops",
+        "link_path": "inquire",
+        "stage": 2,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "PRICING",
+        "keywords": [
+          "price",
+          "cost",
+          "how much",
+          "budget",
+          "starting at",
+          "rate"
+        ],
+        "pool": null,
+        "link_path": "pricing",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "TIMELINE",
+        "keywords": [
+          "how long",
+          "timeline",
+          "weeks",
+          "months",
+          "when can",
+          "start by"
+        ],
+        "pool": null,
+        "link_path": "process",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "CASE STUDY ASK",
+        "keywords": [
+          "case study",
+          "portfolio",
+          "example",
+          "show me",
+          "past work",
+          "previous"
+        ],
+        "pool": null,
+        "link_path": "work",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "SERVICE — STRATEGY",
+        "keywords": [
+          "strategy",
+          "positioning",
+          "brand strategy",
+          "go to market",
+          "gtm"
+        ],
+        "pool": "ops",
+        "link_path": "strategy",
+        "stage": 2,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "SERVICE — DESIGN",
+        "keywords": [
+          "design",
+          "logo",
+          "identity",
+          "visual",
+          "brand guidelines"
+        ],
+        "pool": "ops",
+        "link_path": "design",
+        "stage": 2,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "SERVICE — DIGITAL",
+        "keywords": [
+          "website",
+          "app",
+          "digital",
+          "build a",
+          "develop",
+          "ux",
+          "ui"
+        ],
+        "pool": "ops",
+        "link_path": "digital",
+        "stage": 2,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "REFERRAL / FRIEND",
+        "keywords": [
+          "referred",
+          "friend told me",
+          "my friend",
+          "recommended"
+        ],
+        "pool": "ops",
+        "link_path": "inquire",
+        "stage": 2,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "JOB / FREELANCE",
+        "keywords": [
+          "work for",
+          "apply",
+          "job",
+          "freelance",
+          "designer",
+          "copywriter",
+          "developer"
+        ],
+        "pool": "ops",
+        "link_path": "careers",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "VENDOR / SUPPLIER",
+        "keywords": [
+          "vendor",
+          "supplier",
+          "sell to",
+          "my service",
+          "my product"
+        ],
+        "pool": null,
+        "link_path": null,
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "PRESS / FEATURE",
+        "keywords": [
+          "press",
+          "journalist",
+          "feature",
+          "podcast",
+          "interview",
+          "awards"
+        ],
+        "pool": "ops",
+        "link_path": "press",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "GENERIC FIRST DM",
+        "keywords": [],
+        "trigger": "first_dm",
+        "pool": null,
+        "link_path": null,
+        "stage": null,
+        "action": "reply_only"
+      }
+    ],
+    "pinned": [
+      {
+        "slot": 1,
+        "concept": "What we do — services overview"
+      },
+      {
+        "slot": 2,
+        "concept": "How a Mind Studio project actually goes (process)"
+      },
+      {
+        "slot": 3,
+        "concept": "Selected work — case study reel"
+      }
+    ]
+  },
+  "peoples_dept": {
+    "brand_key": "peoples_dept",
+    "brand_name": "The People's Dept.",
+    "short_name": "People's Dept",
+    "division": "services",
+    "ig_handle": "thepeoplesdeptworldwide",
+    "website": "https://thepeoplesdept.com",
+    "primary_color": "#1E40AF",
+    "accent_color": "#FBBF24",
+    "dark_color": "#08090E",
+    "category": "Civic / Community",
+    "contact_email": "hello@thepeoplesdept.com",
+    "voice": "Professional + protective. Explains the system + removes the friction.",
+    "tagline": "A department for the people. Built for the city.",
+    "bio_text": "🏛 THE PEOPLE'S DEPT.\nA civic department for the people of the city.\nPrograms · partnerships · pop-ups · Atlanta-first.\n🔗 Get involved.",
+    "link_in_bio_label": "Get Involved →",
+    "audience": "civically-minded ATL residents, community partners, small business owners, NGOs",
+    "highlights": [
+      {
+        "i": 1,
+        "t": "MISSION",
+        "concept": "What we do"
+      },
+      {
+        "i": 2,
+        "t": "PROGRAMS",
+        "concept": "Active programs"
+      },
+      {
+        "i": 3,
+        "t": "GET INVOLVED",
+        "concept": "Volunteer / participate"
+      },
+      {
+        "i": 4,
+        "t": "PARTNERS",
+        "concept": "Community partners"
+      },
+      {
+        "i": 5,
+        "t": "POP-UPS",
+        "concept": "Where to find us"
+      },
+      {
+        "i": 6,
+        "t": "RESOURCES",
+        "concept": "Tools + guides"
+      },
+      {
+        "i": 7,
+        "t": "DONATE",
+        "concept": "Support our work"
+      },
+      {
+        "i": 8,
+        "t": "PRESS",
+        "concept": "Press + features"
+      },
+      {
+        "i": 9,
+        "t": "TESTIMONIALS",
+        "concept": "Community stories"
+      },
+      {
+        "i": 10,
+        "t": "FAQ",
+        "concept": "Common questions"
+      }
+    ],
+    "pillar_mix": [
+      [
+        "Program Spotlights",
+        30
+      ],
+      [
+        "Community Stories",
+        25
+      ],
+      [
+        "Partner Features",
+        20
+      ],
+      [
+        "Education / Civic Info",
+        15
+      ],
+      [
+        "BTS",
+        10
+      ]
+    ],
+    "intents": [
+      {
+        "name": "VOLUNTEER",
+        "keywords": [
+          "volunteer",
+          "help out",
+          "get involved",
+          "participate",
+          "join",
+          "sign up"
+        ],
+        "pool": "ops",
+        "link_path": "volunteer",
+        "stage": 1,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "PARTNER / PROGRAM",
+        "keywords": [
+          "partner",
+          "partnership",
+          "program",
+          "work together",
+          "my organization",
+          "my nonprofit"
+        ],
+        "pool": "ops",
+        "link_path": "partners",
+        "stage": 3,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "DONATE / SPONSOR",
+        "keywords": [
+          "donate",
+          "support",
+          "fund",
+          "sponsor",
+          "contribute",
+          "grant"
+        ],
+        "pool": "ops",
+        "link_path": "donate",
+        "stage": 5,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "POP-UP LOCATION",
+        "keywords": [
+          "where",
+          "location",
+          "next pop up",
+          "schedule",
+          "calendar",
+          "when are you"
+        ],
+        "pool": null,
+        "link_path": "schedule",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "RESOURCE REQUEST",
+        "keywords": [
+          "help me",
+          "need",
+          "resource",
+          "assistance",
+          "information",
+          "support"
+        ],
+        "pool": "ops",
+        "link_path": "resources",
+        "stage": 1,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "MEDIA / PRESS",
+        "keywords": [
+          "press",
+          "journalist",
+          "feature",
+          "podcast",
+          "story about"
+        ],
+        "pool": "ops",
+        "link_path": "press",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "VENDOR / VENDOR APP",
+        "keywords": [
+          "vendor",
+          "sell at",
+          "table at",
+          "exhibit",
+          "booth",
+          "my product"
+        ],
+        "pool": "ops",
+        "link_path": "vendors",
+        "stage": 3,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "CAREER",
+        "keywords": [
+          "job",
+          "hiring",
+          "work for",
+          "staff",
+          "apply"
+        ],
+        "pool": "ops",
+        "link_path": "careers",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "REFERRAL",
+        "keywords": [
+          "referred",
+          "my friend told",
+          "recommended"
+        ],
+        "pool": "ops",
+        "link_path": "involved",
+        "stage": 1,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "INVITE / SPEAKING",
+        "keywords": [
+          "speak at",
+          "invite",
+          "panel",
+          "keynote",
+          "conference",
+          "event"
+        ],
+        "pool": "ops",
+        "link_path": "speaking",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "FEEDBACK / IDEA",
+        "keywords": [
+          "feedback",
+          "idea",
+          "suggestion",
+          "what about",
+          "you should",
+          "wish you"
+        ],
+        "pool": null,
+        "link_path": "feedback",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "GENERIC FIRST DM",
+        "keywords": [],
+        "trigger": "first_dm",
+        "pool": null,
+        "link_path": null,
+        "stage": null,
+        "action": "reply_only"
+      }
+    ],
+    "pinned": [
+      {
+        "slot": 1,
+        "concept": "What The People's Dept. does — mission + scope"
+      },
+      {
+        "slot": 2,
+        "concept": "Active programs — get involved"
+      },
+      {
+        "slot": 3,
+        "concept": "Community impact — stories"
+      }
+    ]
+  },
+  "sole_exchange": {
+    "brand_key": "sole_exchange",
+    "brand_name": "Sole Exchange",
+    "short_name": "Sole Exchange",
+    "division": "nonprofit",
+    "ig_handle": "thesoleexchangeworldwide",
+    "website": "https://thesoleexchange.org",
+    "primary_color": "#F97316",
+    "accent_color": "#0F172A",
+    "dark_color": "#08090E",
+    "category": "Nonprofit",
+    "contact_email": "hello@thesoleexchange.org",
+    "voice": "Warm + welcoming + ATL-coded. Speaks to neighbors, not strangers.",
+    "tagline": "Sneakers off feet of the privileged. Onto feet of those without.",
+    "bio_text": "👟 SOLE EXCHANGE\nSneaker drives + community: from feet that have, to feet that need.\n501(c)(3) nonprofit · Atlanta-based · giving giving wings.\n🔗 Donate · Volunteer.",
+    "link_in_bio_label": "Donate Sneakers →",
+    "audience": "sneaker collectors, community-minded donors, schools, sneakerheads, volunteers",
+    "highlights": [
+      {
+        "i": 1,
+        "t": "DONATE",
+        "concept": "How to donate sneakers"
+      },
+      {
+        "i": 2,
+        "t": "MISSION",
+        "concept": "Our story"
+      },
+      {
+        "i": 3,
+        "t": "EVENTS",
+        "concept": "Drives + drops"
+      },
+      {
+        "i": 4,
+        "t": "RECIPIENTS",
+        "concept": "Stories of impact"
+      },
+      {
+        "i": 5,
+        "t": "VOLUNTEER",
+        "concept": "Help out"
+      },
+      {
+        "i": 6,
+        "t": "CORPORATE",
+        "concept": "Company drives"
+      },
+      {
+        "i": 7,
+        "t": "MERCH",
+        "concept": "Support via merch"
+      },
+      {
+        "i": 8,
+        "t": "PRESS",
+        "concept": "Press + features"
+      },
+      {
+        "i": 9,
+        "t": "BOARD",
+        "concept": "Meet the team"
+      },
+      {
+        "i": 10,
+        "t": "501c3",
+        "concept": "Tax-deductible info"
+      }
+    ],
+    "pillar_mix": [
+      [
+        "Donor / Recipient Stories",
+        35
+      ],
+      [
+        "Drive / Event Recaps",
+        25
+      ],
+      [
+        "Education / Need",
+        15
+      ],
+      [
+        "Corporate / School Partners",
+        15
+      ],
+      [
+        "Founder / BTS",
+        10
+      ]
+    ],
+    "intents": [
+      {
+        "name": "DONATE SNEAKERS",
+        "keywords": [
+          "donate",
+          "drop off",
+          "mail in",
+          "ship sneakers",
+          "give sneakers",
+          "i have shoes"
+        ],
+        "pool": null,
+        "link_path": "donate",
+        "stage": 1,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "FINANCIAL DONATION",
+        "keywords": [
+          "donate money",
+          "financial",
+          "fund",
+          "contribute",
+          "support financially",
+          "grant"
+        ],
+        "pool": "ops",
+        "link_path": "donate-money",
+        "stage": 5,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "VOLUNTEER",
+        "keywords": [
+          "volunteer",
+          "help out",
+          "participate",
+          "join",
+          "sign up",
+          "work events"
+        ],
+        "pool": "ops",
+        "link_path": "volunteer",
+        "stage": 1,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "CORPORATE DRIVE",
+        "keywords": [
+          "corporate",
+          "company drive",
+          "my office",
+          "team drive",
+          "work",
+          "organization drive"
+        ],
+        "pool": "ops",
+        "link_path": "corporate",
+        "stage": 3,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "SCHOOL / NONPROFIT",
+        "keywords": [
+          "school",
+          "class",
+          "nonprofit",
+          "my organization",
+          "run a drive",
+          "host"
+        ],
+        "pool": "ops",
+        "link_path": "partners",
+        "stage": 3,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "RECIPIENT REQUEST",
+        "keywords": [
+          "need shoes",
+          "my family",
+          "my kid",
+          "my class",
+          "kids in our",
+          "apply for shoes"
+        ],
+        "pool": "ops",
+        "link_path": "request",
+        "stage": 1,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "MEDIA / PRESS",
+        "keywords": [
+          "press",
+          "journalist",
+          "feature",
+          "story",
+          "podcast"
+        ],
+        "pool": "ops",
+        "link_path": "press",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "EVENT QUESTION",
+        "keywords": [
+          "next event",
+          "next drive",
+          "when is",
+          "schedule",
+          "calendar"
+        ],
+        "pool": null,
+        "link_path": "events",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "TAX RECEIPT",
+        "keywords": [
+          "tax",
+          "receipt",
+          "deductible",
+          "501",
+          "ein"
+        ],
+        "pool": null,
+        "link_path": "501c3",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "AMBASSADOR / CREATOR",
+        "keywords": [
+          "ambassador",
+          "creator",
+          "content",
+          "represent",
+          "spread the word"
+        ],
+        "pool": "ops",
+        "link_path": "ambassador",
+        "stage": 2,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "MERCH",
+        "keywords": [
+          "merch",
+          "shirt",
+          "hat",
+          "buy",
+          "store"
+        ],
+        "pool": null,
+        "link_path": "merch",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "GENERIC FIRST DM",
+        "keywords": [],
+        "trigger": "first_dm",
+        "pool": null,
+        "link_path": null,
+        "stage": null,
+        "action": "reply_only"
+      }
+    ],
+    "pinned": [
+      {
+        "slot": 1,
+        "concept": "Why Sole Exchange exists — our mission"
+      },
+      {
+        "slot": 2,
+        "concept": "How to donate / where to drop off"
+      },
+      {
+        "slot": 3,
+        "concept": "Recipient impact reel"
+      }
+    ]
+  },
+  "umbrella_group": {
+    "brand_key": "umbrella_group",
+    "brand_name": "The Umbrella Group",
+    "short_name": "Umbrella",
+    "division": "services",
+    "ig_handle": "theumbrella.group",
+    "website": "https://theumbrella.group",
+    "primary_color": "#1E293B",
+    "accent_color": "#F59E0B",
+    "dark_color": "#08090E",
+    "category": "Holding / Services",
+    "contact_email": "hello@theumbrella.group",
+    "voice": "Systems-builder calm. Confident, no-fluff, every sentence earns its space.",
+    "tagline": "One umbrella. Eight verticals. Atlanta to everywhere.",
+    "bio_text": "☂️ THE UMBRELLA GROUP\n8 service verticals under one operating system.\nAccounting · Auto · Clean · Injury · Legal · Realty · & more.\n🔗 What we cover.",
+    "link_in_bio_label": "What We Cover →",
+    "audience": "business owners, families, attorneys, partners, investors",
+    "highlights": [
+      {
+        "i": 1,
+        "t": "WHAT WE DO",
+        "concept": "8 verticals overview"
+      },
+      {
+        "i": 2,
+        "t": "INJURY",
+        "concept": "Help 911 / PI"
+      },
+      {
+        "i": 3,
+        "t": "LEGAL",
+        "concept": "Legal & Compliance"
+      },
+      {
+        "i": 4,
+        "t": "REALTY",
+        "concept": "Realty Group"
+      },
+      {
+        "i": 5,
+        "t": "AUTO",
+        "concept": "Auto Exchange"
+      },
+      {
+        "i": 6,
+        "t": "ACCOUNTING",
+        "concept": "Accounting"
+      },
+      {
+        "i": 7,
+        "t": "CLEAN",
+        "concept": "Clean Services"
+      },
+      {
+        "i": 8,
+        "t": "PARTNER",
+        "concept": "Become a partner"
+      },
+      {
+        "i": 9,
+        "t": "PRESS",
+        "concept": "Press + features"
+      },
+      {
+        "i": 10,
+        "t": "FAQ",
+        "concept": "Common questions"
+      }
+    ],
+    "pillar_mix": [
+      [
+        "Vertical Spotlights",
+        35
+      ],
+      [
+        "Client Wins / Case Studies",
+        25
+      ],
+      [
+        "Education",
+        20
+      ],
+      [
+        "Founder / Build-In-Public",
+        10
+      ],
+      [
+        "Press / Wins",
+        10
+      ]
+    ],
+    "intents": [
+      {
+        "name": "INJURY / ACCIDENT",
+        "keywords": [
+          "accident",
+          "crash",
+          "wreck",
+          "hurt",
+          "injured",
+          "personal injury",
+          "car accident"
+        ],
+        "pool": "attorney_pool",
+        "link_path": "injury",
+        "stage": 1,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "LEGAL — GENERAL",
+        "keywords": [
+          "legal",
+          "attorney",
+          "lawyer",
+          "compliance",
+          "contract",
+          "sue",
+          "lawsuit"
+        ],
+        "pool": "attorney_pool",
+        "link_path": "legal",
+        "stage": 2,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "REALTY — BUY / SELL",
+        "keywords": [
+          "buy",
+          "sell",
+          "house",
+          "home",
+          "realtor",
+          "real estate",
+          "property",
+          "listing"
+        ],
+        "pool": "ops",
+        "link_path": "realty",
+        "stage": 2,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "AUTO PURCHASE / SALE",
+        "keywords": [
+          "car",
+          "vehicle",
+          "auto",
+          "trade",
+          "sell my car",
+          "financing"
+        ],
+        "pool": "ops",
+        "link_path": "auto",
+        "stage": 2,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "ACCOUNTING / TAX",
+        "keywords": [
+          "accounting",
+          "tax",
+          "bookkeeping",
+          "cpa",
+          "payroll"
+        ],
+        "pool": "ops",
+        "link_path": "accounting",
+        "stage": 2,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "CLEAN SERVICES",
+        "keywords": [
+          "clean",
+          "cleaning",
+          "janitorial",
+          "commercial cleaning",
+          "my office"
+        ],
+        "pool": "ops",
+        "link_path": "clean",
+        "stage": 1,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "INVESTMENT INQUIRY",
+        "keywords": [
+          "invest",
+          "investor",
+          "funding",
+          "capital"
+        ],
+        "pool": "dolo_personal",
+        "link_path": "invest",
+        "stage": 5,
+        "action": "reply_and_handoff"
+      },
+      {
+        "name": "PARTNER NETWORK",
+        "keywords": [
+          "partner",
+          "provider",
+          "add my",
+          "referral partner",
+          "provider network"
+        ],
+        "pool": "ops",
+        "link_path": "partners",
+        "stage": 3,
+        "action": "reply_and_route"
+      },
+      {
+        "name": "CAREERS",
+        "keywords": [
+          "job",
+          "hiring",
+          "work for",
+          "apply",
+          "careers"
+        ],
+        "pool": "ops",
+        "link_path": "careers",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "PRESS / MEDIA",
+        "keywords": [
+          "press",
+          "journalist",
+          "feature",
+          "podcast",
+          "interview"
+        ],
+        "pool": "ops",
+        "link_path": "press",
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "GENERAL INFO",
+        "keywords": [
+          "what is",
+          "who are you",
+          "what do you do",
+          "tell me about"
+        ],
+        "pool": null,
+        "link_path": null,
+        "stage": null,
+        "action": "reply_only"
+      },
+      {
+        "name": "GENERIC FIRST DM",
+        "keywords": [],
+        "trigger": "first_dm",
+        "pool": null,
+        "link_path": null,
+        "stage": null,
+        "action": "reply_only"
+      }
+    ],
+    "pinned": [
+      {
+        "slot": 1,
+        "concept": "What Umbrella covers — 8 verticals overview"
+      },
+      {
+        "slot": 2,
+        "concept": "How we connect you to the right vertical (60-sec triage)"
+      },
+      {
+        "slot": 3,
+        "concept": "Become a partner provider"
+      }
+    ]
+  }
+}
