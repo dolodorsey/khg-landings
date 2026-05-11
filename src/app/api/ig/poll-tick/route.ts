@@ -86,7 +86,6 @@ async function pollOne(m: GhlMap) {
   const searchUrl = new URL(`${GHL_BASE}/conversations/search`);
   searchUrl.searchParams.set('locationId', m.ghl_location_id);
   searchUrl.searchParams.set('limit', '20');
-  searchUrl.searchParams.set('lastMessageType', 'TYPE_IG');
   searchUrl.searchParams.set('sortBy', 'last_message_date');
   searchUrl.searchParams.set('sort', 'desc');
 
@@ -110,7 +109,8 @@ async function pollOne(m: GhlMap) {
     // Skip if last message wasn't inbound IG
     const lastType = conv.lastMessageType;
     const lastDir = conv.lastMessageDirection;
-    if (lastType !== 'TYPE_IG' || lastDir !== 'inbound') continue;
+    const isIg = lastType === 'TYPE_IG' || lastType === 'IG' || lastType === 'Instagram' || lastType === 'TYPE_INSTAGRAM';
+    if (!isIg || lastDir !== 'inbound') continue;
 
     scanned++;
     try {
@@ -150,7 +150,13 @@ async function replyToConversation(m: GhlMap, conv: any) {
 
   // Find latest INBOUND IG message
   const lastInbound = messages.find(
-    (mm) => mm.direction === 'inbound' && (mm.messageType === 'TYPE_IG' || mm.type === 29),
+    (mm) => mm.direction === 'inbound' && (
+      mm.messageType === 'TYPE_IG' ||
+      mm.messageType === 'IG' ||
+      mm.messageType === 'Instagram' ||
+      mm.messageType === 'TYPE_INSTAGRAM' ||
+      mm.type === 29
+    ),
   );
   if (!lastInbound) return { replied: false, error: 'no_inbound_msg' };
 
