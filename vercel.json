@@ -2,7 +2,7 @@
   "crons": [
     {
       "path": "/api/ig/poll-tick",
-      "schedule": "* * * * *"
+      "schedule": "0 6 * * *"
     }
   ]
 }
