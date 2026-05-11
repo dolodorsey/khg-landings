@@ -59,10 +59,13 @@ export async function GET(req: NextRequest) {
     pit_token: string;
   }>;
 
+  const lookbackParam = req.nextUrl.searchParams.get('lookback_min');
+  const lookbackMin = lookbackParam ? Math.min(60 * 24, parseInt(lookbackParam, 10) || 5) : 5;
+
   const summary: Record<string, any> = {};
 
   for (const m of maps) {
-    summary[m.brand_key] = await pollOne(m);
+    summary[m.brand_key] = await pollOne(m, lookbackMin);
   }
 
   return NextResponse.json({
@@ -73,7 +76,7 @@ export async function GET(req: NextRequest) {
 
 type GhlMap = { brand_key: string; ghl_location_id: string; pit_token: string };
 
-async function pollOne(m: GhlMap) {
+async function pollOne(m: GhlMap, lookbackMin: number = 5) {
   const headers = {
     Authorization: `Bearer ${m.pit_token}`,
     Version: GHL_VERSION,
@@ -82,7 +85,7 @@ async function pollOne(m: GhlMap) {
 
   // 1. Get conversations updated in last 5 min, IG channel only, with unread inbound
   // GHL search supports: locationId, lastMessageType=TYPE_IG, status, sort
-  const sinceMs = Date.now() - 5 * 60 * 1000;
+  const sinceMs = Date.now() - lookbackMin * 60 * 1000;
   const searchUrl = new URL(`${GHL_BASE}/conversations/search`);
   searchUrl.searchParams.set('locationId', m.ghl_location_id);
   searchUrl.searchParams.set('limit', '20');
