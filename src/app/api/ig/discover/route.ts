@@ -1,11 +1,3 @@
-/**
- * Admin/setup endpoint — queries Meta Graph API using credentials in Supabase
- * to discover every Facebook Page + linked Instagram Business Account owned by
- * the KHG Meta Business. Returns the data so we can auto-match to brand_social_handles
- * by ig_handle.
- *
- * Protected by a probe key — call with ?key=<ADMIN_PROBE_KEY>.
- */
 import { NextRequest, NextResponse } from 'next/server';
 
 export const runtime = 'nodejs';
@@ -14,7 +6,14 @@ export const dynamic = 'force-dynamic';
 const SUPABASE_URL = process.env.SUPABASE_URL || 'https://dzlmtvodpyhetvektfuo.supabase.co';
 const SUPABASE_SERVICE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY || '';
 const PROBE_KEY = process.env.ADMIN_PROBE_KEY || '';
-const META_GRAPH_VERSION = 'v21.0';
+
+const GHL_BASE = 'https://services.leadconnectorhq.com';
+const GHL_VERSION = '2021-07-28';
+
+const ACTIVE_BRANDS = [
+  'casper_group', 'dr_dorsey', 'forever_futbol', 'good_times',
+  'huglife', 'peoples_dept', 'pronto_energy', 'umbrella_group',
+];
 
 export async function GET(req: NextRequest) {
   const key = req.nextUrl.searchParams.get('key');
@@ -22,78 +21,57 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({ error: 'forbidden' }, { status: 403 });
   }
 
-  // Pull Meta creds from Supabase
-  const credRes = await fetch(
-    `${SUPABASE_URL}/rest/v1/credentials?credential_key=in.(meta_business,meta_facebook_page_token)&select=credential_key,credential_value`,
-    {
-      headers: {
-        apikey: SUPABASE_SERVICE_KEY,
-        Authorization: `Bearer ${SUPABASE_SERVICE_KEY}`,
-      },
-    },
+  const ghlRes = await fetch(
+    `${SUPABASE_URL}/rest/v1/brand_ghl_map?brand_key=in.(${ACTIVE_BRANDS.join(',')})&select=brand_key,ghl_location_id,pit_token`,
+    { headers: { apikey: SUPABASE_SERVICE_KEY, Authorization: `Bearer ${SUPABASE_SERVICE_KEY}` } },
   );
-  const creds = (await credRes.json()) as Array<{
-    credential_key: string;
-    credential_value: any;
-  }>;
-  const metaBiz = creds.find((c) => c.credential_key === 'meta_business')?.credential_value;
-  const pageTokenCred = creds.find((c) => c.credential_key === 'meta_facebook_page_token')?.credential_value;
+  const maps = (await ghlRes.json()) as Array<{ brand_key: string; ghl_location_id: string; pit_token: string }>;
 
-  if (!metaBiz) {
-    return NextResponse.json({ error: 'no_meta_business_cred' }, { status: 500 });
-  }
+  const results: Record<string, any> = {};
 
-  const systemToken: string | undefined = metaBiz.meta_system_user_token;
-  const businessId: string | undefined = metaBiz.meta_business_id;
-  const appId: string | undefined = metaBiz.meta_app_id;
-  const pageToken: string | undefined = pageTokenCred?.token;
+  for (const m of maps) {
+    if (!m.pit_token || !m.ghl_location_id) {
+      results[m.brand_key] = { error: 'missing_creds' };
+      continue;
+    }
+    const headers = {
+      Authorization: `Bearer ${m.pit_token}`,
+      Version: GHL_VERSION,
+      Accept: 'application/json',
+    };
 
-  const probes: any = {
-    has_system_token: !!systemToken,
-    has_business_id: !!businessId,
-    has_app_id: !!appId,
-    has_page_token: !!pageToken,
-  };
+    const locRes = await fetch(`${GHL_BASE}/locations/${m.ghl_location_id}`, { headers });
+    const locStatus = locRes.status;
+    let locName = null;
+    let locErr: any = null;
+    if (locStatus === 200) {
+      const b = await locRes.json();
+      locName = b?.location?.name || b?.name;
+    } else {
+      locErr = (await locRes.text()).slice(0, 200);
+    }
 
-  // Probe 1: validate system token
-  if (systemToken) {
-    const r = await fetch(
-      `https://graph.facebook.com/${META_GRAPH_VERSION}/me?fields=id,name&access_token=${encodeURIComponent(systemToken)}`,
+    const convRes = await fetch(
+      `${GHL_BASE}/conversations/search?locationId=${m.ghl_location_id}&limit=3`,
+      { headers },
     );
-    probes.system_token_me = await r.json();
+    const convStatus = convRes.status;
+    let convCount = null;
+    let convErr: any = null;
+    if (convStatus === 200) {
+      const b = await convRes.json();
+      convCount = b?.conversations?.length ?? b?.total ?? 0;
+    } else {
+      convErr = (await convRes.text()).slice(0, 200);
+    }
+
+    results[m.brand_key] = {
+      location_id: m.ghl_location_id,
+      pit_chars: m.pit_token.length,
+      location: { status: locStatus, name: locName, error: locErr },
+      conversations: { status: convStatus, count: convCount, error: convErr },
+    };
   }
 
-  // Probe 2: validate page token
-  if (pageToken) {
-    const r = await fetch(
-      `https://graph.facebook.com/${META_GRAPH_VERSION}/me?fields=id,name&access_token=${encodeURIComponent(pageToken)}`,
-    );
-    probes.page_token_me = await r.json();
-  }
-
-  // Probe 3: list business-owned pages with IG account info (system user token)
-  if (systemToken && businessId) {
-    const r = await fetch(
-      `https://graph.facebook.com/${META_GRAPH_VERSION}/${businessId}/owned_pages?fields=id,name,access_token,instagram_business_account{id,username,name,profile_picture_url}&limit=100&access_token=${encodeURIComponent(systemToken)}`,
-    );
-    probes.owned_pages = await r.json();
-  }
-
-  // Probe 4: also try /me/accounts on page token (sometimes user/system tokens give different results)
-  if (pageToken) {
-    const r = await fetch(
-      `https://graph.facebook.com/${META_GRAPH_VERSION}/me/accounts?fields=id,name,access_token,instagram_business_account{id,username,name}&limit=100&access_token=${encodeURIComponent(pageToken)}`,
-    );
-    probes.page_token_accounts = await r.json();
-  }
-
-  // Probe 5: granular_scopes on the system token
-  if (systemToken && appId) {
-    const r = await fetch(
-      `https://graph.facebook.com/${META_GRAPH_VERSION}/debug_token?input_token=${encodeURIComponent(systemToken)}&access_token=${encodeURIComponent(systemToken)}`,
-    );
-    probes.system_token_debug = await r.json();
-  }
-
-  return NextResponse.json(probes);
+  return NextResponse.json({ results });
 }
