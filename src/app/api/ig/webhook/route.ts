@@ -138,10 +138,11 @@ async function handleIncomingMessage(igAccountId: string, ev: any) {
     matchedRule = await findMatchingRule(brandKey, messageText, isFirstDm);
   }
 
-  // 4. Insert inbound log row (idempotent on message_id thanks to UNIQUE constraint)
+  // 4. Upsert inbound log row using on_conflict (idempotent on message_id UNIQUE).
+  //    Resolution=merge-duplicates ensures we always get a returned row.
   const inboundInsert = await sb<Array<{ id: number }>>(
     'POST',
-    '/rest/v1/ig_inbound_log',
+    '/rest/v1/ig_inbound_log?on_conflict=message_id',
     {
       brand_key: brandKey,
       ig_account_id: igAccountId,
@@ -153,9 +154,21 @@ async function handleIncomingMessage(igAccountId: string, ev: any) {
       matched_rule_id: matchedRule?.id ?? null,
       matched_intent: matchedRule?.rule_name ?? null,
     },
-    { Prefer: 'return=representation,resolution=ignore-duplicates' },
+    { Prefer: 'return=representation,resolution=merge-duplicates' },
   );
-  const inboundId = inboundInsert?.[0]?.id;
+  let inboundId = inboundInsert?.[0]?.id;
+  if (!inboundId) {
+    // Fallback: re-fetch by message_id (shouldn't happen but provides safety net)
+    const refetch = await sb<Array<{ id: number; reply_sent: boolean }>>(
+      'GET',
+      `/rest/v1/ig_inbound_log?message_id=eq.${encodeURIComponent(messageId)}&select=id,reply_sent`,
+    );
+    inboundId = refetch?.[0]?.id;
+    if (refetch?.[0]?.reply_sent) {
+      console.log('[ig-webhook] already replied to', messageId);
+      return;
+    }
+  }
 
   // 5. Upsert sender state
   await sb('POST', '/rest/v1/ig_sender_state', {
