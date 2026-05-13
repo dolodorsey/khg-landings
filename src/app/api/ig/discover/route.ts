@@ -13,6 +13,7 @@ const GHL_VERSION = '2021-07-28';
 const ACTIVE_BRANDS = [
   'casper_group', 'dr_dorsey', 'forever_futbol', 'good_times',
   'huglife', 'peoples_dept', 'pronto_energy', 'umbrella_group',
+  'help_911',
 ];
 
 export async function GET(req: NextRequest) {
